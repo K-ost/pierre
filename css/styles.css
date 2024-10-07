@@ -1,0 +1,194 @@
+@import url(https://db.onlinewebfonts.com/c/e1dfb0da15bc47f4a472a6d1df9f45de?family=Santral-Medium);
+:root {
+  --color-success: #81d8d0;
+  --color-secondary: #f4f0ea;
+  --color-black: #000000;
+  --color-light: #fbf9f7;
+  --color-white: #ffffff;
+  --ff: "Santral-Medium", Verdana, Sans-Serif;
+  --grid: 24px;
+}
+
+body {
+  color: var(--color-black);
+  font-family: var(--ff);
+  margin: 0;
+}
+
+/* grid */
+.grid {
+  display: grid;
+  grid-column-gap: var(--grid);
+  grid-row-gap: var(--grid);
+}
+.grid-1 {
+  grid-template-columns: repeat(1, 1fr);
+}
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid-6 {
+  grid-template-columns: repeat(6, 1fr);
+}
+.grid-7 {
+  grid-template-columns: repeat(7, 1fr);
+}
+.grid-8 {
+  grid-template-columns: repeat(8, 1fr);
+}
+.grid-9 {
+  grid-template-columns: repeat(9, 1fr);
+}
+.grid-10 {
+  grid-template-columns: repeat(10, 1fr);
+}
+.grid-11 {
+  grid-template-columns: repeat(11, 1fr);
+}
+.grid-12 {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* icons */
+.icon {
+  --size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: inline-block;
+  height: var(--size);
+  width: var(--size);
+}
+.icon-chevron-left {
+  background-image: url(../images/svg/chevron-right.svg);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.icon-chevron-up {
+  background-image: url(../images/svg/chevron-down.svg);
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.icon-lg {
+  --size: 44px;
+}
+.icon-bag {
+  background-image: url(../images/svg/bag.svg);
+}
+.icon-user {
+  background-image: url(../images/svg/user.svg);
+}
+.icon-phone {
+  background-image: url(../images/svg/phone.svg);
+}
+.icon-search {
+  background-image: url(../images/svg/search.svg);
+}
+.icon-close {
+  background-image: url(../images/svg/close.svg);
+}
+.icon-pin {
+  background-image: url(../images/svg/pin.svg);
+}
+.icon-zoom {
+  background-image: url(../images/svg/zoom.svg);
+}
+.icon-chevron-down {
+  background-image: url(../images/svg/chevron-down.svg);
+}
+.icon-chevron-right {
+  background-image: url(../images/svg/chevron-right.svg);
+}
+
+/* topline */
+.topline {
+  background: var(--color-success);
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 20px;
+}
+.topline .container {
+  padding: 10px 30px;
+  position: relative;
+}
+.topline .swiper {
+  position: static;
+}
+.topline .swiper-slide {
+  text-align: center;
+}
+.topline-prev, .topline-next {
+  cursor: pointer;
+  margin-top: -12px;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+}
+.topline-prev {
+  left: 0;
+}
+.topline-next {
+  right: 0;
+}
+
+/* header */
+.header {
+  background: var(--color-white);
+  position: sticky;
+  top: 0;
+  z-index: 500;
+}
+.header-top {
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0 0 6px;
+}
+.header-top .icon {
+  margin: 0 16px 0 0;
+}
+.header-top .icon:last-child {
+  margin: 0;
+}
+.header-logo img {
+  display: block;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.header-icons {
+  align-items: center;
+  display: flex;
+  margin-top: 16px;
+}
+
+/* navmenu */
+.navmenu {
+  position: relative;
+}
+.navmenu ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.navmenu ul li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 16px;
+  padding: 8px 8px 23px;
+}
+.navmenu ul li a {
+  color: var(--color-black);
+  text-decoration: none;
+  display: block;
+}
