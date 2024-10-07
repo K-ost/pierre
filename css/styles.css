@@ -2,9 +2,11 @@
 :root {
   --color-success: #81d8d0;
   --color-secondary: #f4f0ea;
+  --color-secondary-hover: #ebe6df;
   --color-black: #000000;
   --color-light: #fbf9f7;
   --color-white: #ffffff;
+  --color-green: #009cad;
   --ff: "Nunito Sans", sans-serif;
   --grid: 24px;
 }
@@ -17,8 +19,18 @@ body {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+}
+
 a {
   color: var(--color-black);
+}
+
+.container-fluid {
+  padding-left: 20px;
+  padding-right: 20px;
+  max-width: 1800px;
 }
 
 /* grid */
@@ -113,6 +125,61 @@ a {
   background-image: url(../images/svg/chevron-right.svg);
 }
 
+/* btn */
+.btn {
+  background: var(--color-black);
+  border: 0;
+  border-radius: 0;
+  color: var(--color-white);
+  cursor: pointer;
+  font-size: 12px;
+  font-family: var(--ff);
+  font-weight: 500;
+  letter-spacing: 0.88px;
+  line-height: 16px;
+  overflow: hidden;
+  text-transform: uppercase;
+  padding: 22px 32px;
+  position: relative;
+}
+.btn-primary span {
+  position: relative;
+  z-index: 2;
+}
+.btn-primary::after {
+  background: var(--color-success);
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  transform: translateY(100%);
+  transition: all 200ms ease-in-out;
+}
+.btn-primary:hover {
+  background: var(--color-black);
+}
+.btn-primary:hover::after {
+  transform: none;
+}
+.btn-primary:active::after {
+  background: var(--color-green);
+}
+.btn-secondary {
+  background: var(--color-secondary);
+  color: var(--color-black);
+}
+.btn-secondary:hover, .btn-secondary:active {
+  background: var(--color-secondary-hover) !important;
+  color: var(--color-black) !important;
+}
+.btn-block {
+  width: 100%;
+}
+
 /* topline */
 .topline {
   background: var(--color-success);
@@ -120,7 +187,7 @@ a {
   font-size: 13px;
   line-height: 20px;
 }
-.topline .container {
+.topline [class*=container] {
   padding: 10px 30px;
   position: relative;
 }
@@ -138,10 +205,10 @@ a {
   z-index: 10;
 }
 .topline-prev {
-  left: 0;
+  left: 20px;
 }
 .topline-next {
-  right: 0;
+  right: 20px;
 }
 
 /* header */
@@ -258,4 +325,86 @@ a {
 }
 .footer_item ul li a:hover {
   text-decoration: underline;
+}
+
+/* product-grid */
+.product-grid {
+  grid-template-columns: 500px 1fr;
+}
+.product-grid > div1 {
+  grid-area: 1/1/2/2;
+}
+.product-grid > div2 {
+  grid-area: 1/1/2/3;
+}
+
+/* product-details */
+.product-details h1 {
+  font-size: 22px;
+  line-height: 32px;
+}
+.product-details .product-price {
+  margin: 0 0 34px;
+}
+
+/* product-buttons */
+.product-buttons .btn {
+  margin: 0 0 12px;
+}
+
+/* pin-link */
+.pin-link {
+  background: url(../images/svg/pin.svg) left center/20px no-repeat;
+  display: inline-block;
+  font-size: 12px;
+  padding: 4px 0 4px 26px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* sizes_line */
+.sizes_line {
+  align-items: center;
+  display: flex;
+  margin: 0 0 34px;
+}
+.sizes_line-title {
+  margin-right: 16px;
+}
+.sizes_line-pick {
+  background: url(../images/svg/chevron-right.svg) right center/20px no-repeat;
+  margin-left: auto;
+  padding-right: 24px;
+  position: relative;
+  text-decoration: none;
+}
+
+/* pick_images */
+.pick_images {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  display: flex;
+  margin: 0 -4px 24px;
+  padding: 0 0 24px;
+}
+.pick_images li {
+  flex: 0 0 33.333333%;
+  max-width: 33.333333%;
+  list-style: none;
+  padding: 0 4px;
+  text-align: center;
+}
+.pick_images li img {
+  background: var(--color-light);
+  border-bottom: 1px solid transparent;
+  filter: brightness(0.98);
+  display: block;
+  margin: 0 0 8px;
+}
+.pick_images li a {
+  display: block;
+  text-decoration: none;
+}
+.pick_images li a.active img {
+  border-bottom-color: var(--color-black);
 }
