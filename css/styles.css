@@ -172,6 +172,7 @@ a {
   letter-spacing: 0.88px;
   line-height: 16px;
   overflow: hidden;
+  text-align: center;
   text-transform: uppercase;
   padding: 22px 32px;
   position: relative;
@@ -205,6 +206,7 @@ a {
 .btn-secondary {
   background: var(--color-secondary);
   color: var(--color-black);
+  overflow: visible;
 }
 .btn-secondary:hover, .btn-secondary:active {
   background: var(--color-secondary-hover) !important;
@@ -212,6 +214,25 @@ a {
 }
 .btn-block {
   width: 100%;
+}
+
+/* form-control */
+.form-control {
+  border: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0;
+  box-shadow: none !important;
+  font-size: 16px;
+  line-height: 20px;
+  height: 60px;
+  padding: 18px 0;
+  outline: none;
+}
+.form-control::placeholder {
+  color: var(--color-grey);
+}
+.form-control:focus {
+  border-bottom-color: var(--color-black);
 }
 
 /* more_link */
@@ -624,6 +645,32 @@ a {
 }
 .faq_item:last-child {
   border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* subscribe */
+.subscribe {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 60px 0;
+}
+.subscribe-title {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.subscribe-form {
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 600px;
+}
+.subscribe .form-control {
+  width: 100%;
+  margin-right: 20px;
+}
+.subscribe .btn {
+  padding: 22px 26px;
 }
 
 @media screen and (max-width: 1200px) {
