@@ -21,8 +21,12 @@ if (document.documentElement.clientWidth < 1200) {
 // spoiler
 function spoilersFunction() {
   const spoilerTitles = document.querySelectorAll(".js-spoiler");
+  const spoilerBodies = document.querySelectorAll(".spoiler-body");
   spoilerTitles.forEach((item) => {
     let showTitle = "";
+    const isCollapsed = item
+      .closest(".spoiler")
+      .classList.contains("collapsed");
 
     if (
       document.documentElement.clientWidth >= 1200 &&
@@ -42,6 +46,10 @@ function spoilersFunction() {
       const bodyHeight = body.children[0].offsetHeight;
 
       if (!item.classList.contains("active")) {
+        if (isCollapsed) {
+          spoilerTitles.forEach((el) => el.classList.remove("active"));
+          spoilerBodies.forEach((el) => (el.style.height = "0px"));
+        }
         body.style.height = `${bodyHeight}px`;
         item.classList.add("active");
         if (hideTitle) {
