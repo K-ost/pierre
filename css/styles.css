@@ -3,6 +3,7 @@
   --color-success: #81d8d0;
   --color-secondary: #f4f0ea;
   --color-secondary-hover: #ebe6df;
+  --color-grey: #9a9a9a;
   --color-black: #000000;
   --color-light: #fbf9f7;
   --color-white: #ffffff;
@@ -10,12 +11,14 @@
   --color-danger: #e50739;
   --ff: "Nunito Sans", sans-serif;
   --grid: 24px;
+  --mb: 44px;
+  --mb2: 80px;
 }
 
 body {
   color: var(--color-black);
   font-family: var(--ff);
-  font-size: 14px;
+  font-size: 16px;
   line-height: 20px;
   margin: 0;
 }
@@ -211,6 +214,59 @@ a {
   width: 100%;
 }
 
+/* more_link */
+.more_link {
+  background: url(../images/svg/chevron-right.svg) right center/20px no-repeat;
+  margin-left: auto;
+  padding-right: 24px;
+  text-decoration: none;
+}
+
+/* spoiler */
+.spoiler-title {
+  position: relative;
+}
+.spoiler-title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background: url(../images/svg/chevron-down.svg) center/cover no-repeat;
+  height: 22px;
+  width: 22px;
+  right: 0;
+  top: 50%;
+  margin-top: -9px;
+}
+.spoiler-title.active::after {
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.spoiler-body {
+  overflow: hidden;
+  height: 0;
+  transition: height 100ms linear;
+}
+
+@media screen and (min-width: 1200px) {
+  .footer_item .spoiler-body {
+    height: auto !important;
+  }
+}
+/* breadcrumbs */
+.breadcrumbs {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding: 24px 0;
+  text-align: center;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.breadcrumbs a {
+  color: var(--color-grey);
+  text-decoration: none;
+}
+.breadcrumbs a:hover {
+  text-decoration: underline;
+}
+
 /* topline */
 .topline {
   --pd: 20px;
@@ -367,7 +423,8 @@ a {
 /* product-grid */
 .product-grid {
   grid-template-columns: 500px 1fr;
-  margin: 0 0 40px;
+  margin-top: var(--mb);
+  margin-bottom: var(--mb2);
 }
 .product-grid > div1 {
   grid-area: 1/1/2/2;
@@ -411,9 +468,7 @@ a {
   margin-right: 16px;
 }
 .sizes_line-pick {
-  background: url(../images/svg/chevron-right.svg) right center/20px no-repeat;
   margin-left: auto;
-  padding-right: 24px;
   position: relative;
   text-decoration: none;
 }
@@ -429,6 +484,8 @@ a {
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
   list-style: none;
+  font-size: 14px;
+  line-height: 16px;
   padding: 0 4px;
   text-align: center;
 }
@@ -449,18 +506,19 @@ a {
 
 /* product_favorites */
 .product_favorites {
-  margin: 0 0 40px;
+  margin: 0 0 var(--mb);
 }
 .product_favorites-btn {
   background: 0;
   border: 0;
-  position: relative;
+  color: var(--color-black);
   font-family: var(--ff);
   font-size: 14px;
   line-height: 20px;
   padding: 0;
   text-transform: uppercase;
   padding-left: 28px;
+  position: relative;
 }
 .product_favorites-btn::after {
   display: block;
@@ -475,6 +533,39 @@ a {
 .product_favorites-error {
   color: var(--color-danger);
   margin-top: 16px;
+}
+
+/* product-description */
+.product-description {
+  margin: 0 0 var(--mb);
+}
+
+/* features */
+.features {
+  margin: 0 0 var(--mb);
+}
+.features .spoiler-body {
+  margin: 0 0 20px;
+}
+.features ul {
+  margin: 0;
+  padding: 0;
+}
+.features ul li {
+  list-style: none;
+  padding-left: 20px;
+  position: relative;
+  margin: 0 0 6px;
+}
+.features ul li::before {
+  display: block;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 7px;
+  width: 4px;
+  height: 4px;
+  background: var(--color-black);
 }
 
 /* product_image */
@@ -511,6 +602,28 @@ a {
 .product_image-grid img {
   display: block;
   box-shadow: 0 0 0 1px #ddd;
+}
+
+/* faq_item */
+.faq-grid {
+  grid-column-gap: 100px;
+  grid-row-gap: var(--mb);
+  margin-bottom: var(--mb2);
+}
+.faq-grid img {
+  display: block;
+}
+
+.faq_item .spoiler-body__inner {
+  padding-bottom: 34px;
+}
+.faq_item-title {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  font-weight: 600;
+  padding: 24px 60px 24px 0;
+}
+.faq_item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
 }
 
 @media screen and (max-width: 1200px) {
@@ -628,12 +741,7 @@ a {
     transform: matrix(1, 0, 0, -1, 0, 0);
   }
   .footer_item ul {
-    display: none;
-    margin: 0;
     padding: 10px 0 30px;
-  }
-  .footer_item ul.open {
-    display: block;
   }
   .footer_item ul li {
     margin: 0 0 12px;
@@ -641,7 +749,6 @@ a {
 
   /* product-grid */
   .product-grid {
-    padding-top: 20px;
     grid-template-columns: repeat(1, 1fr);
   }
   .product-grid > div {
