@@ -68,3 +68,10 @@ function spoilersFunction() {
   });
 }
 spoilersFunction();
+
+// nav open / close
+document.querySelector(".js-nav_open").addEventListener("click", (e) => {
+  e.preventDefault();
+  e.target.classList.toggle("active");
+  document.body.classList.toggle("nav_opened");
+});
