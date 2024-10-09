@@ -11,6 +11,7 @@
 
 	<link rel="shortcut icon" href="images/favicon.ico">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/styles.css" type="text/css">
 	<!--[if IE]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
@@ -46,7 +47,7 @@
 			<div class="header-icons">
 				<a href="#" class="icon icon-phone"></a>
 				<a href="#" class="icon icon-user md-hidden"></a>
-				<a href="#" class="icon icon-bag"></a>
+				<a href="#" class="icon icon-bag jsCustomPopup" data-id="cartbox"><span class="badge">1</span></a>
 			</div>
 		</div>
 	</div>
@@ -247,7 +248,7 @@
 
     <div>
       <div class="product_image product_image-first">
-        <a href="images/uploads/image.webp"><img src="images/uploads/image.webp" alt=""></a>
+        <a href="images/uploads/image.webp" data-fancybox="Gallery"><img src="images/uploads/image.webp" alt=""></a>
       </div><!-- /product_image -->
       
       <div class="product_favorites">
@@ -280,16 +281,16 @@
 
       <div class="product_image-grid">
         <div class="product_image">
-          <a href="images/uploads/product1.webp"><img src="images/uploads/product1.webp" alt=""></a>
+          <a href="images/uploads/product1.webp" data-fancybox="Gallery"><img src="images/uploads/product1.webp" alt=""></a>
         </div><!-- /product_image -->
         <div class="product_image">
-          <a href="images/uploads/product2.webp"><img src="images/uploads/product2.webp" alt=""></a>
+          <a href="images/uploads/product2.webp" data-fancybox="Gallery"><img src="images/uploads/product2.webp" alt=""></a>
         </div><!-- /product_image -->
         <div class="product_image">
-          <a href="images/uploads/product3.webp"><img src="images/uploads/product3.webp" alt=""></a>
+          <a href="images/uploads/product3.webp" data-fancybox="Gallery"><img src="images/uploads/product3.webp" alt=""></a>
         </div><!-- /product_image -->
         <div class="product_image">
-          <a href="images/uploads/product4.webp"><img src="images/uploads/product4.webp" alt=""></a>
+          <a href="images/uploads/product4.webp" data-fancybox="Gallery"><img src="images/uploads/product4.webp" alt=""></a>
         </div><!-- /product_image -->
       </div><!-- /product_image-grid -->
     </div>
@@ -364,6 +365,15 @@
     </form>
   </div>
 </div><!-- /subscribe -->
+
+<div class="cartbox custom_popup" id="cartbox">
+  <div class="custom_popup-backdrop"></div>
+  <div class="custom_popup-body vertical">
+    <button class="btn-close custom_popup-close"></button>
+    <div class="custom_popup-title">Cart</div>
+    @@children
+  </div>
+</div><!-- /custom_popup -->
 
 <footer class="footer">
   <div class="container-fluid">
@@ -462,6 +472,7 @@
 
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="js/common.js"></script>
 

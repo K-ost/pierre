@@ -93,3 +93,38 @@ if (document.documentElement.clientWidth < 1200) {
     });
   });
 }
+
+// Fancybox
+Fancybox.bind("[data-fancybox]", {
+  Toolbar: {
+    display: {
+      left: ["infobar"],
+      right: ["close"],
+    },
+  },
+  Thumbs: false,
+});
+
+// custom_popup
+function openCustomPopup(classname) {
+  document.querySelector(classname).addEventListener("click", (e) => {
+    e.preventDefault();
+    document
+      .querySelector(`#${e.target.dataset.id}`)
+      .closest(".custom_popup")
+      .classList.add("opened");
+    document.body.classList.add("customPopup_opened");
+  });
+}
+function closeCustomPopup(classname) {
+  const customPopupCls = document.querySelectorAll(classname);
+  customPopupCls.forEach((cls) => {
+    cls.addEventListener("click", () => {
+      cls.closest(".custom_popup").classList.remove("opened");
+      document.body.classList.remove("customPopup_opened");
+    });
+  });
+}
+closeCustomPopup(".custom_popup-backdrop");
+closeCustomPopup(".custom_popup-close");
+openCustomPopup(".jsCustomPopup");
