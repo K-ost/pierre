@@ -128,3 +128,14 @@ function closeCustomPopup(classname) {
 closeCustomPopup(".custom_popup-backdrop");
 closeCustomPopup(".custom_popup-close");
 openCustomPopup(".jsCustomPopup");
+
+// radioSize
+const radioSizes = document.querySelectorAll(".radioSize");
+radioSizes.forEach((radio) => {
+  radio.addEventListener("change", (e) => {
+    const { value } = e.target;
+    document.querySelector(".sizes_line-pick").textContent = value;
+    document.querySelector("#sizes-popup").classList.remove("opened");
+    document.body.classList.remove("customPopup_opened");
+  });
+});

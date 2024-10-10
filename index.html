@@ -47,7 +47,7 @@
 			<div class="header-icons">
 				<a href="#" class="icon icon-phone jsCustomPopup" data-id="contacts-popup"></a>
 				<a href="#" class="icon icon-user md-hidden"></a>
-				<a href="#" class="icon icon-bag jsCustomPopup" data-id="cartbox">
+				<a href="#" class="icon icon-bag">
 					<span class="badge">1</span>
 				</a>
 			</div>
@@ -236,12 +236,12 @@
       <div class="sizes_line">
         <div class="sizes_line-title">Размер</div>
         <a href="#">Таблица размеров</a>
-        <a href="#" class="more_link sizes_line-pick">3</a>
+        <a href="#" class="more_link sizes_line-pick jsCustomPopup" data-id="sizes-popup">3</a>
       </div><!-- /sizes_line -->
 
       <div class="product-buttons">
         <button class="btn btn-primary btn-block"><span>Добавить в корзину</span></button>
-        <button class="btn btn-secondary btn-block">Свяжитесь с консультантом</button>
+        <button class="btn btn-secondary btn-block jsCustomPopup" data-id="contacts-popup">Свяжитесь с консультантом</button>
         <div class="text-center">
           <a href="#" class="pin-link">Наличие уточняйте в магазинах</a>
         </div>
@@ -373,7 +373,19 @@
   <div class="custom_popup-body">
     <button class="btn-close custom_popup-close"></button>
     <div class="custom_popup-title">Поиск по сайту</div>
-    <input type="text" class="form-control" placeholder="Поиск по сайту">
+    <div class="search-popup-form">
+      <form action="#">
+        <input type="text" class="form-control" placeholder="Поиск по сайту">
+      </form>
+    </div>
+    <div class="search-popup-title">Популярные запросы</div>
+    <div class="search-popup-list">
+      <a href="#" class="btn btn-secondary btn-sm">Запрос</a>
+      <a href="#" class="btn btn-secondary btn-sm">Запрос</a>
+      <a href="#" class="btn btn-secondary btn-sm">Запрос</a>
+      <a href="#" class="btn btn-secondary btn-sm">Запрос</a>
+      <a href="#" class="btn btn-secondary btn-sm">Запрос</a>
+    </div>
   </div>
 </div><!-- /custom_popup -->
 <div class="custom_popup" id="contacts-popup">
@@ -391,6 +403,95 @@
       <li><a href="#"><span class="icon icon-meet"></span> Назначить встречу</a></li>
       <li><a href="#"><span class="icon icon-envelope"></span> Электронная почта</a></li>
     </ul>
+  </div>
+</div><!-- /custom_popup -->
+<div class="custom_popup" id="sizes-popup">
+  <div class="custom_popup-backdrop"></div>
+  <div class="custom_popup-body vertical">
+    <button class="btn-close custom_popup-close"></button>
+    <div class="custom_popup-title">Выберите свой размер.</div>
+    
+    <table class="table_sizes">
+      <tr>
+        <th>Размер Тиффани</th>
+        <th colspan="2">Внутренний диаметр/<br> внутренняя окружность</th>
+        <th class="text-right">Страна</th>	
+      </tr>
+      <tr class="table_sizes-row">
+  <td>3</td>
+  <td>14,1/44,2 мм</td>
+  <td>14</td>
+  <td class="text-right">
+    <label for="size-3"></label>
+    <input type="radio" class="form-radio radioSize" id="size-3" name="sizes" value="3" checked>
+  </td>
+</tr><!-- /table_sizes-row --><tr class="table_sizes-row">
+  <td>3.5</td>
+  <td>14,1/44,2 мм</td>
+  <td>14</td>
+  <td class="text-right">
+    <label for="size-3.5"></label>
+    <input type="radio" class="form-radio radioSize" id="size-3.5" name="sizes" value="3.5" >
+  </td>
+</tr><!-- /table_sizes-row --><tr class="table_sizes-row">
+  <td>4</td>
+  <td>14,1/44,2 мм</td>
+  <td>14</td>
+  <td class="text-right">
+    <label for="size-4"></label>
+    <input type="radio" class="form-radio radioSize" id="size-4" name="sizes" value="4" >
+  </td>
+</tr><!-- /table_sizes-row --><tr class="table_sizes-row">
+  <td>4.5</td>
+  <td>14,1/44,2 мм</td>
+  <td>14</td>
+  <td class="text-right">
+    <label for="size-4.5"></label>
+    <input type="radio" class="form-radio radioSize" id="size-4.5" name="sizes" value="4.5" >
+  </td>
+</tr><!-- /table_sizes-row --><tr class="table_sizes-row">
+  <td>5</td>
+  <td>14,1/44,2 мм</td>
+  <td>14</td>
+  <td class="text-right">
+    <label for="size-5"></label>
+    <input type="radio" class="form-radio radioSize" id="size-5" name="sizes" value="5" >
+  </td>
+</tr><!-- /table_sizes-row --><tr class="table_sizes-row">
+  <td>5.5</td>
+  <td>14,1/44,2 мм</td>
+  <td>14</td>
+  <td class="text-right">
+    <label for="size-5.5"></label>
+    <input type="radio" class="form-radio radioSize" id="size-5.5" name="sizes" value="5.5" >
+  </td>
+</tr><!-- /table_sizes-row --><tr class="table_sizes-row">
+  <td>6</td>
+  <td>14,1/44,2 мм</td>
+  <td>14</td>
+  <td class="text-right">
+    <label for="size-6"></label>
+    <input type="radio" class="form-radio radioSize" id="size-6" name="sizes" value="6" >
+  </td>
+</tr><!-- /table_sizes-row --><tr class="table_sizes-row">
+  <td>6.5</td>
+  <td>14,1/44,2 мм</td>
+  <td>14</td>
+  <td class="text-right">
+    <label for="size-6.5"></label>
+    <input type="radio" class="form-radio radioSize" id="size-6.5" name="sizes" value="6.5" >
+  </td>
+</tr><!-- /table_sizes-row --><tr class="table_sizes-row">
+  <td>7</td>
+  <td>14,1/44,2 мм</td>
+  <td>14</td>
+  <td class="text-right">
+    <label for="size-7"></label>
+    <input type="radio" class="form-radio radioSize" id="size-7" name="sizes" value="7" >
+  </td>
+</tr><!-- /table_sizes-row -->
+    </table><!-- /table_sizes -->
+
   </div>
 </div><!-- /custom_popup -->
 
