@@ -107,13 +107,13 @@ Fancybox.bind("[data-fancybox]", {
 
 // custom_popup
 function openCustomPopup(classname) {
-  document.querySelector(classname).addEventListener("click", (e) => {
-    e.preventDefault();
-    document
-      .querySelector(`#${e.target.dataset.id}`)
-      .closest(".custom_popup")
-      .classList.add("opened");
-    document.body.classList.add("customPopup_opened");
+  const openBtns = document.querySelectorAll(classname);
+  openBtns.forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault();
+      document.querySelector(`#${e.target.dataset.id}`).classList.add("opened");
+      document.body.classList.add("customPopup_opened");
+    });
   });
 }
 function closeCustomPopup(classname) {

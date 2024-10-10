@@ -38,16 +38,18 @@
 		<div class="container-fluid">
 			<div class="header-icons">
 				<a href="#" class="icon icon-nav md-visible js-nav_open"></a>
-				<a href="#" class="icon icon-search"></a>
+				<a href="#" class="icon icon-search jsCustomPopup" data-id="search-popup"></a>
 				<a href="#" class="icon icon-pin md-hidden"></a>
 			</div>
 			<div class="header-logo">
 				<a href="#"><img src="images/logo.svg" alt=""></a>
 			</div>
 			<div class="header-icons">
-				<a href="#" class="icon icon-phone"></a>
+				<a href="#" class="icon icon-phone jsCustomPopup" data-id="contacts-popup"></a>
 				<a href="#" class="icon icon-user md-hidden"></a>
-				<a href="#" class="icon icon-bag jsCustomPopup" data-id="cartbox"><span class="badge">1</span></a>
+				<a href="#" class="icon icon-bag jsCustomPopup" data-id="cartbox">
+					<span class="badge">1</span>
+				</a>
 			</div>
 		</div>
 	</div>
@@ -366,12 +368,29 @@
   </div>
 </div><!-- /subscribe -->
 
-<div class="cartbox custom_popup" id="cartbox">
+<div class="custom_popup" id="search-popup">
+  <div class="custom_popup-backdrop"></div>
+  <div class="custom_popup-body">
+    <button class="btn-close custom_popup-close"></button>
+    <div class="custom_popup-title">Поиск по сайту</div>
+    <input type="text" class="form-control" placeholder="Поиск по сайту">
+  </div>
+</div><!-- /custom_popup -->
+<div class="custom_popup" id="contacts-popup">
   <div class="custom_popup-backdrop"></div>
   <div class="custom_popup-body vertical">
     <button class="btn-close custom_popup-close"></button>
-    <div class="custom_popup-title">Cart</div>
-    @@children
+    <div class="custom_popup-title">Связаться с нами</div>
+    <p><img src="images/contacts-image.jpg" alt=""></p>
+    <div class="contacts-text">
+      <p>Наши консультанты по работе с клиентами всегда готовы помочь вам: от поиска идеального подарка Tiffany до советов по стилю.</p>
+      <p>Часы работы службы поддержки клиентов:<br> понедельник-пятница: с 9:30 до 18:00.</p>
+    </div>
+    <ul class="contacts-menu">
+      <li><a href="tel:08002007669​"><span class="icon icon-call"></span> Звоните (0800 200 7669​)</a></li>
+      <li><a href="#"><span class="icon icon-meet"></span> Назначить встречу</a></li>
+      <li><a href="#"><span class="icon icon-envelope"></span> Электронная почта</a></li>
+    </ul>
   </div>
 </div><!-- /custom_popup -->
 
