@@ -104,27 +104,3 @@ Fancybox.bind("[data-fancybox]", {
   },
   Thumbs: false,
 });
-
-// custom_popup
-function openCustomPopup(classname) {
-  const openBtns = document.querySelectorAll(classname);
-  openBtns.forEach((btn) => {
-    btn.addEventListener("click", (e) => {
-      e.preventDefault();
-      document.querySelector(`#${e.target.dataset.id}`).classList.add("opened");
-      document.body.classList.add("customPopup_opened");
-    });
-  });
-}
-function closeCustomPopup(classname) {
-  const customPopupCls = document.querySelectorAll(classname);
-  customPopupCls.forEach((cls) => {
-    cls.addEventListener("click", () => {
-      cls.closest(".custom_popup").classList.remove("opened");
-      document.body.classList.remove("customPopup_opened");
-    });
-  });
-}
-closeCustomPopup(".custom_popup-backdrop");
-closeCustomPopup(".custom_popup-close");
-openCustomPopup(".jsCustomPopup");

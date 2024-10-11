@@ -411,72 +411,33 @@ h1 {
   background: var(--color-white);
 }
 
-/* custom_popup */
-.custom_popup {
+/* offcanvas */
+.offcanvas {
   --pd: 34px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  overflow: hidden;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-  transition: all 200ms ease-in-out;
-  backdrop-filter: blur(10px);
-}
-.custom_popup-close {
-  position: absolute;
-  left: var(--pd);
-  top: var(--pd);
-}
-.custom_popup-backdrop {
-  background: var(--color-black);
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0.45;
-  z-index: 1;
-}
-.custom_popup-body {
   background: var(--color-white);
   box-shadow: 0 2px 8px var(--color-border);
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: auto;
-  z-index: 2;
-  transition: transform 200ms ease-in-out;
-  padding: 90px var(--pd) var(--pd);
-  transform: translateY(-100%);
+  width: 100% !important;
 }
-.custom_popup-body.vertical {
-  box-shadow: -2px 0 8px var(--color-border);
-  left: auto;
-  right: 0;
-  bottom: 0;
+.offcanvas-header {
+  padding: var(--pd);
+  padding-bottom: var(--grid);
+}
+.offcanvas-body {
+  padding: var(--pd);
+  padding-top: 0;
+}
+.offcanvas-end {
   max-width: 580px;
-  overflow: auto;
-  transform: translateX(600px);
 }
-.custom_popup-title {
+.offcanvas-top {
+  height: auto !important;
+  bottom: auto !important;
+}
+.offcanvas-title {
   font-family: var(--ff2);
   font-size: 28px;
   line-height: 32px;
-  margin: 0 0 34px;
-  text-align: left;
-}
-.custom_popup.opened {
-  opacity: 1;
-  visibility: visible;
-  display: block;
-}
-.custom_popup.opened .custom_popup-body {
-  transform: translate(0);
+  margin: 0 !important;
 }
 
 /* rating */
@@ -1389,14 +1350,11 @@ h1 {
     margin: 0 0 var(--mb);
   }
 
-  /* custom_popup */
-  .custom_popup {
+  /* offcanvas */
+  .offcanvas {
     --pd: 16px;
   }
-  .custom_popup-body {
-    padding-top: 60px;
-  }
-  .custom_popup-title {
-    margin: 0 0 20px;
+  .offcanvas-header {
+    padding: 20px var(--pd) 10px;
   }
 }

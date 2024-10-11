@@ -38,14 +38,14 @@
 		<div class="container-fluid">
 			<div class="header-icons">
 				<a href="#" class="icon icon-nav md-visible js-nav_open"></a>
-				<a href="#" class="icon icon-search jsCustomPopup" data-id="search-popup"></a>
+				<a href="#search-popup" class="icon icon-search" data-bs-toggle="offcanvas"></a>
 				<a href="#" class="icon icon-pin md-hidden"></a>
 			</div>
 			<div class="header-logo">
 				<a href="#"><img src="images/logo.svg" alt=""></a>
 			</div>
 			<div class="header-icons">
-				<a href="#" class="icon icon-phone jsCustomPopup" data-id="contacts-popup"></a>
+				<a href="#contacts-popup" class="icon icon-phone" data-bs-toggle="offcanvas"></a>
 				<a href="#" class="icon icon-user md-hidden"></a>
 				<a href="#" class="icon icon-bag">
 					<span class="badge">1</span>
@@ -522,11 +522,12 @@
   </div>
 </div><!-- /subscribe -->
 
-<div class="custom_popup" id="search-popup">
-  <div class="custom_popup-backdrop"></div>
-  <div class="custom_popup-body">
-    <button class="btn-close custom_popup-close"></button>
-    <div class="custom_popup-title">Поиск по сайту</div>
+<div class="offcanvas offcanvas-top" id="search-popup" tabindex="-1">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Поиск по сайту</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
     <div class="search-popup-form">
       <form action="#">
         <input type="text" class="form-control" placeholder="Поиск по сайту">
@@ -541,12 +542,13 @@
       <a href="#" class="btn btn-secondary btn-sm">Запрос</a>
     </div>
   </div>
-</div><!-- /custom_popup -->
-<div class="custom_popup" id="contacts-popup">
-  <div class="custom_popup-backdrop"></div>
-  <div class="custom_popup-body vertical">
-    <button class="btn-close custom_popup-close"></button>
-    <div class="custom_popup-title">Связаться с нами</div>
+</div><!-- /offcanvas -->
+<div class="offcanvas offcanvas-end" id="contacts-popup" tabindex="-1">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Связаться с нами</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
     <p><img src="images/contacts-image.jpg" alt=""></p>
     <div class="contacts-text">
       <p>Наши консультанты по работе с клиентами всегда готовы помочь вам: от поиска идеального подарка Tiffany до советов по стилю.</p>
@@ -558,7 +560,7 @@
       <li><a href="#"><span class="icon icon-envelope"></span> Электронная почта</a></li>
     </ul>
   </div>
-</div><!-- /custom_popup -->
+</div><!-- /offcanvas -->
 
 <footer class="footer">
   <div class="container-fluid">
