@@ -1,11 +1,21 @@
-// toplineSlider
-const toplineSlider = new Swiper(".topline .swiper", {
-  slidesPerView: 1,
-  navigation: {
-    nextEl: ".topline-next",
-    prevEl: ".topline-prev",
-  },
-});
+// carouselCreator
+function carouselCreator(id, num = 4, space = 24) {
+  return new Swiper(id, {
+    slidesPerView: 1,
+    spaceBetween: space,
+    breakpoints: {
+      480: { slidesPerView: 2 },
+      750: { slidesPerView: 3 },
+      1020: { slidesPerView: num },
+    },
+    navigation: {
+      nextEl: `${id} .swiper-button-next`,
+      prevEl: `${id} .swiper-button-prev`,
+    },
+  });
+}
+const reviewsSlider = carouselCreator("#reviews-slider", 5);
+const alsolikeSlider = carouselCreator("#alsolike-slider", 5);
 
 // js-foot_title
 if (document.documentElement.clientWidth < 1200) {
