@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap");
 :root {
+  --color-purple: #8A87D8;
   --color-success: #81d8d0;
   --color-secondary: #f4f0ea;
   --color-secondary-hover: #ebe6df;
@@ -24,6 +25,18 @@ body {
   font-size: 16px;
   line-height: 22px;
   margin: 0;
+}
+body::before {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: var(--color-purple);
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
 }
 
 body.nav_opened,
