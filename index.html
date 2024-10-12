@@ -590,47 +590,47 @@
     <div>
       <img src="images/gift.jpg" alt="">
     </div>
-    <div>
-      <div class="spoiler faq_item collapsed">
-  <div class="faq_item-title spoiler-title js-spoiler active">Blue Box</div>
-  <div class="spoiler-body" style="height: auto;">
-    <div class="spoiler-body__inner">
+    <div id="faqAccordion">
+      <div class="faq_item accordion-item">
+  <div class="faq_item-title " data-bs-toggle="collapse" data-bs-target="#faq-1">Blue Box</div>
+  <div id="faq-1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
       Alle Tiffany & Co. Einkäufe werden in einer Tiffany Blue Box® verpackt geliefert. Dieses ikonische Design begleitet uns bereits seit dem Jahr 1886. Heute aber werden alle Blue Boxes und Blue Bags aus Papier aus nachhaltigen Quellen und recycelten Materialien hergestellt.
     </div>
   </div>
-</div><!-- /spoiler -->
-      <div class="spoiler faq_item collapsed">
-  <div class="faq_item-title spoiler-title js-spoiler ">Kostenloser Versand und Rückversand</div>
-  <div class="spoiler-body" >
-    <div class="spoiler-body__inner">
+</div><!-- /faq_item -->
+      <div class="faq_item accordion-item">
+  <div class="faq_item-title collapsed" data-bs-toggle="collapse" data-bs-target="#faq-2">Kostenloser Versand und Rückversand</div>
+  <div id="faq-2" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
       Alle Tiffany & Co. Einkäufe werden in einer Tiffany Blue Box® verpackt geliefert. Dieses ikonische Design begleitet uns bereits seit dem Jahr 1886. Heute aber werden alle Blue Boxes und Blue Bags aus Papier aus nachhaltigen Quellen und recycelten Materialien hergestellt.
     </div>
   </div>
-</div><!-- /spoiler -->
-      <div class="spoiler faq_item collapsed">
-  <div class="faq_item-title spoiler-title js-spoiler ">Свяжитесь с консультантом по работе с клиентами</div>
-  <div class="spoiler-body" >
-    <div class="spoiler-body__inner">
+</div><!-- /faq_item -->
+      <div class="faq_item accordion-item">
+  <div class="faq_item-title collapsed" data-bs-toggle="collapse" data-bs-target="#faq-3">Свяжитесь с консультантом по работе с клиентами</div>
+  <div id="faq-3" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
       Alle Tiffany & Co. Einkäufe werden in einer Tiffany Blue Box® verpackt geliefert. Dieses ikonische Design begleitet uns bereits seit dem Jahr 1886. Heute aber werden alle Blue Boxes und Blue Bags aus Papier aus nachhaltigen Quellen und recycelten Materialien hergestellt.
     </div>
   </div>
-</div><!-- /spoiler -->
-      <div class="spoiler faq_item collapsed">
-  <div class="faq_item-title spoiler-title js-spoiler ">Таблица размеров</div>
-  <div class="spoiler-body" >
-    <div class="spoiler-body__inner">
+</div><!-- /faq_item -->
+      <div class="faq_item accordion-item">
+  <div class="faq_item-title collapsed" data-bs-toggle="collapse" data-bs-target="#faq-4">Таблица размеров</div>
+  <div id="faq-4" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
       Alle Tiffany & Co. Einkäufe werden in einer Tiffany Blue Box® verpackt geliefert. Dieses ikonische Design begleitet uns bereits seit dem Jahr 1886. Heute aber werden alle Blue Boxes und Blue Bags aus Papier aus nachhaltigen Quellen und recycelten Materialien hergestellt.
     </div>
   </div>
-</div><!-- /spoiler -->
-      <div class="spoiler faq_item collapsed">
-  <div class="faq_item-title spoiler-title js-spoiler ">Найти магазин</div>
-  <div class="spoiler-body" >
-    <div class="spoiler-body__inner">
+</div><!-- /faq_item -->
+      <div class="faq_item accordion-item">
+  <div class="faq_item-title collapsed" data-bs-toggle="collapse" data-bs-target="#faq-5">Найти магазин</div>
+  <div id="faq-5" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
       Alle Tiffany & Co. Einkäufe werden in einer Tiffany Blue Box® verpackt geliefert. Dieses ikonische Design begleitet uns bereits seit dem Jahr 1886. Heute aber werden alle Blue Boxes und Blue Bags aus Papier aus nachhaltigen Quellen und recycelten Materialien hergestellt.
     </div>
   </div>
-</div><!-- /spoiler -->
+</div><!-- /faq_item -->
     </div>
   </div>
 </div><!-- /container -->
@@ -695,98 +695,80 @@
 </div><!-- /offcanvas -->
 
 <footer class="footer">
-  <div class="container-fluid">
-    <div class="footer-top">
-      <div class="footer-logo md-visible">
-        <a href="#"><img src="images/logo.svg" alt=""></a>
-      </div>
-      <div class="grid grid-4 grid-md-1">
-        <div class="footer_item spoiler">
-  <div class="footer_item-title js-spoiler">KUNDENSERVICE</div>
-  <div class="spoiler-body">
-    <ul>
-      
-        <li><a href="#">Bestellung Verfolgen</a></li>
-      
-        <li><a href="#">Kontakt</a></li>
-      
-        <li><a href="#">Termin Buchen</a></li>
-      
-        <li><a href="#">Häufig gestellte Fragen</a></li>
-      
-        <li><a href="#">Versand &amp; Rückgaberecht</a></li>
-      
-        <li><a href="#">Storeinformationen</a></li>
-      
-        <li><a href="#">Site Index</a></li>
-      
-    </ul>
+	<div class="container">
+		<div class="footer-top">
+			<div class="grid footer-grid" id="accordionFooter">
+        <div class="accordion-item">
+          <div class="footer-title collapsed" data-bs-toggle="collapse" data-bs-target="#foot1">Меню сайта</div>
+          <div id="foot1" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+            <div class="accordion-body">
+              <ul class="footer-menu">
+  <li><a href="#">О PIERRE</a></li>
+  <li><a href="#">КОНТАКТЫ</a></li>
+  <li><a href="#">ПРОЦЕСС ЗАКАЗА</a></li>
+  <li><a href="#">ВОПРОСЫ И ОТВЕТЫ</a></li>
+  <li><a href="#">ОТЗЫВЫ КЛИЕНТОВ</a></li>
+  <li><a href="#">СПОСОБЫ ОПЛАТЫ</a></li>
+  <li><a href="#">ОПЛАТА В КРЕДИТ</a></li>
+  <li><a href="#">БЕСПЛАТНАЯ ДОСТАВКА</a></li>
+  <li><a href="#">ГАРАНТИЯ КАЧЕСТВА</a></li>
+  <li><a href="#">ЖУРНАЛ PIERRE</a></li>
+  <li><a href="#">КОЛЬЦА</a></li>
+  <li><a href="#">СЕРЬГИ</a></li>
+  <li><a href="#">КАТАЛОГ</a></li>
+</ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="footer-title collapsed" data-bs-toggle="collapse" data-bs-target="#foot2">Адрес</div>
+          <div id="foot2" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+            <div class="accordion-body">
+              <div>
+  <div class="fs5 footer-line"><a href="tel:88001002824">8-800-100-28-24</a></div>
+  <div class="fs3 footer-line">
+    <a href="#">Обратный звонок</a>
   </div>
-</div><!-- /footer_item -->
-
-        <div class="footer_item spoiler">
-  <div class="footer_item-title js-spoiler">SERVICELEISTUNGEN</div>
-  <div class="spoiler-body">
-    <ul>
-      
-        <li><a href="#">Produktpflege &amp; Reparatur</a></li>
-      
-    </ul>
+  <div class="footer-line">
+    <div class="fs3">Москва, ул. Брянская, д.5</div>
+    <b class="fs1">Санкт-Петербург, Вознесенский пр., 6</b>
   </div>
-</div><!-- /footer_item -->
-
-        <div class="footer_item spoiler">
-  <div class="footer_item-title js-spoiler">ÜBER TIFFANY &amp; CO.</div>
-  <div class="spoiler-body">
-    <ul>
-      
-        <li><a href="#">Nachhaltigkeit</a></li>
-      
-        <li><a href="#">Tiffany &amp; Co. Stiftung</a></li>
-      
-        <li><a href="#">Karriere</a></li>
-      
-        <li><a href="#">Tiffany für die Presse</a></li>
-      
-    </ul>
+</div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="footer-title collapsed" data-bs-toggle="collapse" data-bs-target="#foot3">Контакты</div>
+          <div id="foot3" class="accordion-collapse collapse" data-bs-parent="#accordionFooter">
+            <div class="accordion-body">
+              <div>
+  <div class="fs3 footer-line"><b>Работаем пн-сб<br> с 12 до 21 по записи</b></div>
+  <div class="fs3 footer-line footer-payment">
+    <b class="me-2">Принимаем</b>
+    <img src="images/svg/visa.svg" alt="" class="me-2">
+    <img src="images/svg/mastercard.svg" alt="">
   </div>
-</div><!-- /footer_item -->
-
-        <div class="footer_item spoiler">
-  <div class="footer_item-title js-spoiler">RECHTLICHE HINWEISE</div>
-  <div class="spoiler-body">
-    <ul>
-      
-        <li><a href="#">Datenschutzrichtlinien</a></li>
-      
-        <li><a href="#">Impressum</a></li>
-      
-        <li><a href="#">Verkaufsbedingungen</a></li>
-      
-    </ul>
+  <div class="footer-item">
+    <b class="fs3">Пишите:</b>
+    <a href="mailto:sales@pierrejewellery.ru">sales@pierrejewellery.ru</a>
   </div>
-</div><!-- /footer_item -->
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container-fluid">
-      <div class="copyright">
-        T&Co. 2024 Standort ändern:
-        <a href="#">Deutschland</a>
-      </div>
-      <div class="footer-logo md-hidden">
-        <a href="#"><img src="images/logo.svg" alt=""></a>
-      </div>
-      <div class="socials">
-        <a href="#">Instagram</a>
-        <a href="#">X</a>
-        <a href="#">Facebook</a>
-        <a href="#">YouTube</a>
-        <a href="#">Pinterest</a>
-      </div>
-    </div>
-  </div>
+</div>
+            </div>
+          </div>
+        </div>
+			</div><!-- /row -->
+		</div><!-- /footer-top -->
+		
+		<div class="copyright">
+			<div class="copyright-left">
+				<b>© 2016-2023 Ювелирный магазин PIERRE – интернет-магазин ювелирных изделий в Москве.</b><br>
+				<small>При использовании любых материалов сайта, включая фотографии и тексты, активная ссылка на https://pierrejewellery.ru обязательна.</small>
+			</div>
+			<div class="copyright-right">
+				<a href="#">Карта сайта</a>
+			</div>
+		</div>
+	</div>
 </footer><!-- /footer -->
 
 <div class="fixed_socials">
@@ -798,6 +780,7 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/imask"></script>
 <script src="js/common.js"></script>
 
 </body>

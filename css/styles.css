@@ -777,17 +777,14 @@ h1, .pagetitle {
 /* footer */
 .footer {
   background: var(--color-light);
+  border-top: 6px solid var(--color-primary);
 }
 .footer-top {
   border-bottom: 1px solid var(--color-border);
   padding: 90px 0;
 }
-.footer-bottom [class*=container] {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  padding-top: 40px;
-  padding-bottom: 40px;
+.footer-grid {
+  grid-template-columns: 56% 22% 22%;
 }
 .footer-logo img {
   max-width: 150px;
@@ -797,34 +794,102 @@ h1, .pagetitle {
   margin: 0 0 34px;
   text-align: center;
 }
-.footer_item-title {
-  font-size: 12px;
+.footer-title {
+  display: none;
+  font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.08em;
   line-height: 16px;
-  margin: 0 0 24px;
+  padding: 24px 0;
+  position: relative;
 }
-.footer_item ul {
+.footer-title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../images/svg/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 12px;
+  right: 0;
+  top: 50%;
+  margin-top: -6px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.footer-title.collapsed::after {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.footer-menu {
   margin: 0;
   padding: 0;
+  column-count: 3;
+  column-gap: var(--grid);
 }
-.footer_item ul li {
+.footer-menu li {
   font-size: 14px;
   line-height: 20px;
   list-style: none;
   margin: 0 0 16px;
 }
-.footer_item ul li:last-child {
+.footer-menu li:last-child {
   margin: 0;
 }
-.footer_item ul li a {
+.footer-menu li a {
   color: var(--color-black);
   text-decoration: none;
 }
-.footer_item ul li a:hover {
+.footer-menu li a:hover {
   text-decoration: underline;
 }
+.footer-payment {
+  display: flex;
+  align-items: center;
+}
+.footer-payment img {
+  display: block;
+  height: 40px;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer-line {
+  margin: 0 0 20px;
+}
+.footer .fs5 {
+  font-size: 22px;
+  line-height: 26px;
+}
+.footer .fs3 {
+  font-size: 16px;
+  line-height: 20px;
+}
+.footer .fs1 {
+  font-size: 10px;
+  line-height: 14px;
+}
 
+.copyright {
+  color: var(--color-grey);
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+.copyright a {
+  color: inherit;
+}
+.copyright b {
+  color: var(--color-black);
+}
+
+@media screen and (min-width: 1200px) {
+  .footer .collapse {
+    display: block;
+  }
+}
 /* product-grid */
 .product-grid {
   grid-template-columns: 1.3333333fr 0.66666fr;
@@ -1016,7 +1081,7 @@ h1, .pagetitle {
 }
 .product_image-grid img {
   display: block;
-  box-shadow: 0 0 0 1px #ddd;
+  box-shadow: 0 0 0 1px var(--color-border);
 }
 
 /* faq_item */
@@ -1029,16 +1094,36 @@ h1, .pagetitle {
   display: block;
 }
 
-.faq_item .spoiler-body {
-  font-family: var(--ff2);
-}
-.faq_item .spoiler-body__inner {
-  padding-bottom: 34px;
-}
 .faq_item-title {
   border-top: 1px solid var(--color-border);
   font-weight: 600;
   padding: 24px 60px 24px 0;
+  position: relative;
+  cursor: pointer;
+}
+.faq_item-title::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-image: url("../images/svg/chevron-down.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 16px;
+  right: 0;
+  top: 50%;
+  margin-top: -8px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.faq_item-title.collapsed::after {
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+.faq_item .accordion-body {
+  font-family: var(--ff2);
+  padding-bottom: 34px;
 }
 .faq_item:last-child {
   border-bottom: 1px solid var(--color-border);
@@ -1305,49 +1390,32 @@ h1, .pagetitle {
   /* footer */
   .footer-top {
     border: 0;
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
-  .footer .grid-md-1 {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  .footer-grid {
+    display: block;
+    grid-template-columns: auto;
     grid-column-gap: 0;
     grid-row-gap: 0;
   }
-  .footer-bottom [class*=container] {
-    display: block;
-    padding-bottom: 50px;
-    padding-top: 0;
+  .footer-menu {
+    column-count: auto;
+    column-gap: auto;
   }
-  .footer-bottom .copyright {
+  .footer-title {
+    display: block;
+  }
+  .footer .accordion-item {
+    border-bottom: 1px solid var(--color-border);
+  }
+  .footer .accordion-body {
+    padding-bottom: 30px;
+  }
+  .footer .copyright {
+    display: block;
+  }
+  .footer .copyright-left {
     margin: 0 0 20px;
-  }
-  .footer_item {
-    margin: 0;
-  }
-  .footer_item-title {
-    border-top: 1px solid rgba(0, 0, 0, 0.15);
-    margin: 0;
-    padding: 20px 60px 20px 0;
-    position: relative;
-  }
-  .footer_item-title::after {
-    display: block;
-    content: "";
-    position: absolute;
-    background: url(../images/svg/chevron-down.svg) center/cover no-repeat;
-    width: 18px;
-    height: 18px;
-    right: 0;
-    top: 50%;
-    margin-top: -9px;
-  }
-  .footer_item-title.active::after {
-    transform: matrix(1, 0, 0, -1, 0, 0);
-  }
-  .footer_item ul {
-    padding: 10px 0 30px;
-  }
-  .footer_item ul li {
-    margin: 0 0 12px;
   }
 
   /* product-grid */
