@@ -603,12 +603,73 @@ h1, .pagetitle {
   margin: 0 3px 6px;
 }
 
+/* scrollText */
+.scrollText {
+  font-size: 14px;
+  line-height: 14px;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  left: 0;
+  height: 14px;
+  overflow: hidden;
+}
+.scrollText-line {
+  animation: scrollAnimationLine 4.9s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  background-color: #000;
+  height: 14px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  width: 1px;
+}
+.scrollText-text {
+  animation: scrollAnimationText 4.9s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+  display: block;
+  left: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+@keyframes scrollAnimationLine {
+  0% {
+    transform: translateY(-100%);
+  }
+  12.24% {
+    transform: translateY(0);
+  }
+  24.48% {
+    transform: translateY(0);
+  }
+  36.72% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+@keyframes scrollAnimationText {
+  0% {
+    transform: translateY(-100%);
+  }
+  40.82% {
+    transform: translateY(-100%);
+  }
+  53.06% {
+    transform: translateY(0);
+  }
+  83.67% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
 /* header */
 .header {
   background: var(--color-white);
-  position: sticky;
-  top: 0;
-  z-index: 500;
 }
 .header-top {
   padding: 16px 0 0 6px;
@@ -906,6 +967,12 @@ h1, .pagetitle {
   order: 2;
 }
 
+/* stickyBox */
+.stickyBox {
+  position: sticky;
+  top: 16px;
+}
+
 /* product-details */
 .product-details h1 {
   font-size: 30px;
@@ -1052,8 +1119,21 @@ h1, .pagetitle {
   position: relative;
 }
 .product_image-first {
-  border-radius: 6px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   margin: 0 0 var(--mb);
+  position: relative;
+}
+.product_image-first picture {
+  padding: 48px;
+  height: calc(100vh - 230px);
+  min-height: 490px;
+}
+.product_image-first img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 .product_image-mb {
   margin-top: var(--mb);
@@ -1078,6 +1158,15 @@ h1, .pagetitle {
 }
 .product_image-grid > div:nth-child(4) {
   grid-area: 3/1/4/3;
+}
+.product_image-grid > div:nth-child(5) {
+  grid-area: 4/1/5/3;
+}
+.product_image-grid > div:nth-child(6) {
+  grid-area: 5/1/6/2;
+}
+.product_image-grid > div:nth-child(7) {
+  grid-area: 5/2/6/3;
 }
 .product_image-grid img {
   display: block;
@@ -1433,6 +1522,11 @@ h1, .pagetitle {
   .product-details {
     order: 1;
     margin: 0 0 var(--mb);
+  }
+
+  .product_image-first picture {
+    height: auto;
+    min-height: 0;
   }
 
   /* offcanvas */

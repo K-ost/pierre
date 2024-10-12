@@ -204,15 +204,17 @@
 </header><!-- /header -->
 
 <div class="container-fluid">
-
-  <div class="product_image product_image-mb md-visible">
-    <a href="images/uploads/image2.webp" data-fancybox="Gallery"><img src="images/uploads/image2.webp" alt=""></a>
-  </div><!-- /product_image -->
   
 	<div class="grid product-grid">
     <div class="product-main">
-      <div class="product_image product_image-first md-hidden">
-        <a href="images/uploads/image2.webp" data-fancybox="Gallery"><img src="images/uploads/image2.webp" alt=""></a>
+      <div class="product_image product_image-first">
+        <picture>
+          <a href="images/uploads/image2.webp" data-fancybox="Gallery"><img src="images/uploads/image2.webp" alt=""></a>
+        </picture>
+        <div class="scrollText">
+  <div class="scrollText-line"></div>
+  <div class="scrollText-text">Прокрутите, чтобы увидеть больше</div>
+</div><!-- /scrollText -->
       </div><!-- /product_image -->
 
       <div class="product_image-grid">
@@ -228,16 +230,26 @@
   <div class="product_image">
     <a href="images/uploads/product4.webp" data-fancybox="Gallery"><img src="images/uploads/product4.webp" alt=""></a>
   </div><!-- /product_image -->
+  <div class="product_image">
+    <a href="images/uploads/product5.webp" data-fancybox="Gallery"><img src="images/uploads/product5.webp" alt=""></a>
+  </div><!-- /product_image -->
+  <div class="product_image">
+    <a href="images/uploads/product6.webp" data-fancybox="Gallery"><img src="images/uploads/product6.webp" alt=""></a>
+  </div><!-- /product_image -->
+  <div class="product_image">
+    <a href="images/uploads/product7.webp" data-fancybox="Gallery"><img src="images/uploads/product7.webp" alt=""></a>
+  </div><!-- /product_image -->
 </div><!-- /product_image-grid -->
     </div><!-- /product_meta -->
 
     <div class="product-details">
-      <h1>Кольцо с бриллиантом Принцесса классика</h1>
-<div class="product-style"><span>Стиль #74183</span> показано 2 к.</div>
+      <div class="stickyBox">
+  <h1>Кольцо с бриллиантом Принцесса классика</h1>
+  <div class="product-style"><span>Стиль #74183</span> показано 2 к.</div>
 
-<div class="product-price">279 т. р.</div>
+  <div class="product-price">279 т. р.</div>
 
-<div class="small_filter">
+  <div class="small_filter">
   <div class="small_filter-title">Вес 1 бриллианта 0,4 карат</div>
   <div class="small_filter-list">
     
@@ -284,7 +296,7 @@
   </div>
 </div><!-- /small_filter -->
 
-<div class="small_filter">
+  <div class="small_filter">
   <div class="small_filter-title">Выберите цвет бриллианта</div>
   <div class="small_filter-list">
     
@@ -326,7 +338,7 @@
   </div>
 </div><!-- /small_filter -->
 
-<div class="small_filter">
+  <div class="small_filter">
   <div class="small_filter-title">Выберите качество бриллианта</div>
   <div class="small_filter-list">
     
@@ -363,7 +375,7 @@
   </div>
 </div><!-- /small_filter -->
 
-<div class="product-features">
+  <div class="product-features">
   <a href="#features-popup" class="more_link" data-bs-toggle="offcanvas">Все характеристики</a>
 </div>
 
@@ -387,12 +399,12 @@
   </div>
 </div><!-- /offcanvas -->
 
-<div class="product-delivery">
-  <span>Доставим в воскресенье 13 августа</span>
-</div>
+  <div class="product-delivery">
+    <span>Доставим в воскресенье 13 августа</span>
+  </div>
 
-<div class="product-buttons">
-  <a href="#book-popup" class="btn btn-block btn-secondary" data-bs-toggle="offcanvas">Забронировать</a>
+  <div class="product-buttons">
+    <a href="#book-popup" class="btn btn-block btn-secondary" data-bs-toggle="offcanvas">Забронировать</a>
 
 <div class="offcanvas offcanvas-start" id="book-popup" tabindex="-1">
   <div class="offcanvas-header">
@@ -418,10 +430,11 @@
   </div>
 </div><!-- /offcanvas -->
 
-  <a href="#" class="btn btn-block btn-primary">
-    <span>В корзину</span>
-  </a>
-</div><!-- /product-buttons -->
+    <a href="#" class="btn btn-block btn-primary">
+      <span>В корзину</span>
+    </a>
+  </div><!-- /product-buttons -->
+</div><!-- /stickyBox -->
     </div><!-- /product-details -->
 
   </div><!-- /product-grid -->
