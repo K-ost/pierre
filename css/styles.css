@@ -508,9 +508,9 @@ h1, .pagetitle {
   text-decoration: underline;
 }
 .swipe_review img {
-  height: 220px;
   display: block;
   margin: 0 0 12px;
+  width: 100%;
   object-fit: cover;
   transition: all 300ms ease-in-out;
 }
@@ -530,16 +530,16 @@ h1, .pagetitle {
 }
 .swipe_good-img {
   background: rgba(0, 0, 0, 0.03);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 275px;
+  height: 100%;
   margin: 0 0 18px;
+  box-sizing: content-box;
+  padding: 10% 0;
 }
 .swipe_good-img img {
   display: block;
   transition: all 300ms ease-in-out;
   mix-blend-mode: multiply;
+  width: 100%;
 }
 .swipe_good-img:hover {
   box-shadow: 0 0 6px 2px #cac5c5;
@@ -565,7 +565,8 @@ h1, .pagetitle {
 }
 .swipe_good-price {
   text-align: center;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 /* carousel */
@@ -586,18 +587,18 @@ h1, .pagetitle {
   height: 36px;
   border-radius: 50%;
   cursor: pointer;
-  margin-top: 0;
-  top: 136px !important;
+  top: 50% !important;
   color: #000;
+  margin-top: -18px;
 }
 .carousel .swiper-button-prev::after, .carousel .swiper-button-next::after {
   font-size: 16px;
 }
-.carousel #reviews-slider .swiper-slide img {
-  width: 100%;
-}
 .carousel #reviews-slider .swiper-button-prev, .carousel #reviews-slider .swiper-button-next {
-  top: 94px !important;
+  margin-top: -36px;
+}
+.carousel-goods .swiper-button-prev, .carousel-goods .swiper-button-next {
+  margin-top: -56px;
 }
 
 /* recomendbox */
