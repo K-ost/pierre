@@ -252,6 +252,10 @@ h1, .pagetitle {
   padding: 22px 32px;
   position: relative;
 }
+.btn-black:hover, .btn-black:active {
+  background: #353535 !important;
+  color: var(--color-white) !important;
+}
 .btn-primary span {
   position: relative;
   z-index: 2;
@@ -289,6 +293,10 @@ h1, .pagetitle {
 }
 .btn-sm {
   padding: 12px 22px;
+  text-transform: none;
+}
+.btn-xs {
+  padding: 8px 16px;
   text-transform: none;
 }
 .btn-block {
@@ -462,7 +470,7 @@ h1, .pagetitle {
 /* fixed_socials */
 .fixed_socials {
   position: fixed;
-  right: 0;
+  left: 0;
   bottom: 24px;
   z-index: 500;
 }
@@ -820,21 +828,6 @@ h1, .pagetitle {
   text-decoration: underline;
 }
 
-/* socials */
-.socials {
-  display: flex;
-}
-.socials a {
-  margin: 0 20px 0 0;
-  text-decoration: none;
-}
-.socials a:last-child {
-  margin: 0;
-}
-.socials a:hover {
-  text-decoration: underline;
-}
-
 /* footer */
 .footer {
   background: var(--color-light);
@@ -970,7 +963,7 @@ h1, .pagetitle {
 /* stickyBox */
 .stickyBox {
   position: sticky;
-  top: 16px;
+  top: 36px;
 }
 
 /* product-details */
@@ -1026,10 +1019,9 @@ h1, .pagetitle {
   line-height: 16px;
   margin: 0 0 24px;
 }
-.product-features .more_link {
-  background-size: 14px;
-  padding-right: 18px;
-  text-decoration: underline;
+.product-features a {
+  border-bottom: 1px dotted var(--color-black);
+  text-decoration: none;
 }
 
 /* small_filter */
@@ -1077,29 +1069,21 @@ h1, .pagetitle {
 }
 
 /* features */
+.features img {
+  margin: 0 0 20px;
+}
 .features ul {
+  border-top: 1px solid var(--color-border);
   margin: 0;
-  padding: 24px 0 0;
+  padding: 0;
 }
-.features li {
-  font-size: 14px;
-  margin: 0 0 16px;
+.features ul li {
+  border-bottom: 1px solid var(--color-border);
   list-style: none;
-  position: relative;
-  padding-left: 20px;
-}
-.features li::before {
-  display: block;
-  content: "";
-  position: absolute;
-  background: var(--color-black);
-  width: 4px;
-  height: 4px;
-  left: 0;
-  top: 9px;
-}
-.features li:last-child {
-  margin: 0;
+  padding: 18px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
 }
 
 /* product-buttons */
@@ -1170,7 +1154,6 @@ h1, .pagetitle {
 }
 .product_image-grid img {
   display: block;
-  box-shadow: 0 0 0 1px var(--color-border);
 }
 
 /* faq_item */
