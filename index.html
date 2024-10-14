@@ -379,26 +379,6 @@
   <a href="#features-popup" data-bs-toggle="offcanvas">Все характеристики</a>
 </div>
 
-<div class="offcanvas offcanvas-start" id="features-popup" tabindex="-1">
-  <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Все характеристики</h5>
-    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-  </div>
-  <div class="offcanvas-body">
-    <div class="features">
-      <img src="images/uploads/image2.webp" alt="">
-      <ul>
-        <li><b>Стиль #:</b> 3565-Y</li>
-        <li><b>Сертификат:</b> GIA, HRD, IGI, GLS или MSU</li>
-        <li><b>Посадка:</b> комфортная (comfort fit) или стандартная (standart)</li>
-        <li><b>Тип металла:</b> <a href="#">Желтое</a></li>
-        <li><b>Камень:</b> <a href="#">Белый БР</a></li>
-        <li><b>Форма камня:</b> <a href="#">Все квадратные</a>, <a href="#">Принцесса</a></li>
-        <li><b>Стили колец:</b> <a href="#">1 камень</a></li>
-      </ul>
-    </div>
-  </div>
-</div><!-- /offcanvas -->
 
   <div class="product-delivery">
     <span>Доставим в воскресенье 13 августа</span>
@@ -435,8 +415,8 @@
   </div><!-- /product-buttons -->
 </div><!-- /stickyBox -->
     </div><!-- /product-details -->
-
   </div><!-- /product-grid -->
+
 </div><!-- /container -->
 
 <div class="container-fluid">
@@ -491,8 +471,11 @@
   </a>
 </div><!-- /slide -->
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="carousel-navigation">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </div><!-- /swiper -->
 </div><!-- /carousel -->
 
@@ -508,7 +491,7 @@
     <div class="swipe_good-title">
       <a href="#">Кольцо бриллиантом эмеральд в ореоле</a>
     </div>
-    <div class="swipe_good-price">225 998 р.</div>
+    <!-- <div class="swipe_good-price">225 998 р.</div> -->
   </div>
 </div><!-- /slide --><div class="swiper-slide">
   <div class="swipe_good">
@@ -518,7 +501,7 @@
     <div class="swipe_good-title">
       <a href="#">Кольцо с бриллиантом в форме квадрата</a>
     </div>
-    <div class="swipe_good-price">135 375 р.</div>
+    <!-- <div class="swipe_good-price">135 375 р.</div> -->
   </div>
 </div><!-- /slide --><div class="swiper-slide">
   <div class="swipe_good">
@@ -528,7 +511,7 @@
     <div class="swipe_good-title">
       <a href="#">Кольцо с бриллиантом Принцесса</a>
     </div>
-    <div class="swipe_good-price">135 375 р.</div>
+    <!-- <div class="swipe_good-price">135 375 р.</div> -->
   </div>
 </div><!-- /slide --><div class="swiper-slide">
   <div class="swipe_good">
@@ -538,7 +521,7 @@
     <div class="swipe_good-title">
       <a href="#">Кольцо с бриллиантом принцесса из желтого золота</a>
     </div>
-    <div class="swipe_good-price">135 375 р.</div>
+    <!-- <div class="swipe_good-price">135 375 р.</div> -->
   </div>
 </div><!-- /slide --><div class="swiper-slide">
   <div class="swipe_good">
@@ -548,7 +531,7 @@
     <div class="swipe_good-title">
       <a href="#">Кольцо бриллиантом эмеральд в ореоле</a>
     </div>
-    <div class="swipe_good-price">225 998 р.</div>
+    <!-- <div class="swipe_good-price">225 998 р.</div> -->
   </div>
 </div><!-- /slide --><div class="swiper-slide">
   <div class="swipe_good">
@@ -558,7 +541,7 @@
     <div class="swipe_good-title">
       <a href="#">Кольцо с бриллиантом в форме квадрата</a>
     </div>
-    <div class="swipe_good-price">135 375 р.</div>
+    <!-- <div class="swipe_good-price">135 375 р.</div> -->
   </div>
 </div><!-- /slide --><div class="swiper-slide">
   <div class="swipe_good">
@@ -568,12 +551,15 @@
     <div class="swipe_good-title">
       <a href="#">Кольцо с бриллиантом Принцесса</a>
     </div>
-    <div class="swipe_good-price">135 375 р.</div>
+    <!-- <div class="swipe_good-price">135 375 р.</div> -->
   </div>
 </div><!-- /slide -->
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div>
+    <div class="carousel-navigation">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+    </div>
   </div><!-- /swiper -->
 </div><!-- /carousel -->
 
@@ -670,7 +656,6 @@
 
 <div class="offcanvas offcanvas-top" id="search-popup" tabindex="-1">
   <div class="offcanvas-header">
-    <h5 class="offcanvas-title">Поиск по сайту</h5>
     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
   <div class="offcanvas-body">
@@ -705,6 +690,26 @@
       <li><a href="#"><span class="icon icon-meet"></span> Назначить встречу</a></li>
       <li><a href="#"><span class="icon icon-envelope"></span> Электронная почта</a></li>
     </ul>
+  </div>
+</div><!-- /offcanvas -->
+<div class="offcanvas offcanvas-start" id="features-popup" tabindex="-1">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title">Все характеристики</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div class="features">
+      <img src="images/uploads/image2.webp" alt="">
+      <ul>
+        <li><b>Стиль #:</b> 3565-Y</li>
+        <li><b>Сертификат:</b> GIA, HRD, IGI, GLS или MSU</li>
+        <li><b>Посадка:</b> комфортная (comfort fit) или стандартная (standart)</li>
+        <li><b>Тип металла:</b> <a href="#">Желтое</a></li>
+        <li><b>Камень:</b> <a href="#">Белый БР</a></li>
+        <li><b>Форма камня:</b> <a href="#">Все квадратные</a>, <a href="#">Принцесса</a></li>
+        <li><b>Стили колец:</b> <a href="#">1 камень</a></li>
+      </ul>
+    </div>
   </div>
 </div><!-- /offcanvas -->
 

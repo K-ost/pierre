@@ -8,14 +8,18 @@ function carouselCreator(id, num = 4, space = 24) {
       750: { slidesPerView: 3 },
       1020: { slidesPerView: num },
     },
+    pagination: {
+      el: `${id} .swiper-pagination`,
+      type: "progressbar",
+    },
     navigation: {
       nextEl: `${id} .swiper-button-next`,
       prevEl: `${id} .swiper-button-prev`,
     },
   });
 }
-const reviewsSlider = carouselCreator("#reviews-slider", 5);
-const alsolikeSlider = carouselCreator("#alsolike-slider", 5);
+const reviewsSlider = carouselCreator("#reviews-slider", 4);
+const alsolikeSlider = carouselCreator("#alsolike-slider", 4);
 
 // js-foot_title
 if (document.documentElement.clientWidth < 1200) {
