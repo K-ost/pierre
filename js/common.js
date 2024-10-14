@@ -67,3 +67,20 @@ Fancybox.bind("[data-fancybox]", {
   },
   Thumbs: false,
 });
+
+// recommend
+document.querySelector(".js-recommend").addEventListener("click", (e) => {
+  e.preventDefault();
+  const parent = e.target.closest(".recommendbox");
+  const hidden = parent.children[0];
+  const height = parent.children[0].children[0].offsetHeight;
+  if (!e.target.classList.contains("active")) {
+    e.target.classList.add("active");
+    hidden.style.height = height + "px";
+    e.target.innerHTML = "&uarr; Скрыть &uarr;";
+  } else {
+    e.target.classList.remove("active");
+    hidden.removeAttribute("style");
+    e.target.innerHTML = "&darr; Показать еще &darr;";
+  }
+});

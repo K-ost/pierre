@@ -296,7 +296,7 @@ h1, .pagetitle {
   text-transform: none;
 }
 .btn-xs {
-  padding: 8px 16px;
+  padding: 6px 16px;
   text-transform: none;
 }
 .btn-block {
@@ -607,15 +607,26 @@ h1, .pagetitle {
   background: var(--color-black);
 }
 
-/* recomendbox */
-.recomendbox {
+/* recommendbox */
+.recommendbox {
   margin: 0 0 var(--mb2);
+}
+.recommendbox-inner {
+  height: 65px;
+  overflow: hidden;
+  transition: height 200ms linear;
+}
+.recommendbox-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.recomendbox .btn {
+.recommendbox .btn {
   margin: 0 3px 6px;
+}
+.recommendbox-more {
+  padding-top: 18px;
+  text-align: center;
 }
 
 /* scrollText */
@@ -755,6 +766,7 @@ h1, .pagetitle {
     transition: all 200ms ease-in-out;
     opacity: 0;
     visibility: hidden;
+    z-index: 1000;
   }
   .dropdown_nav-header {
     display: none;
@@ -1538,5 +1550,14 @@ h1, .pagetitle {
   }
   .offcanvas-header {
     padding: 20px var(--pd) 10px;
+  }
+
+  /* search-popup */
+  #search-popup .btn-close {
+    right: 20px;
+    top: 20px;
+  }
+  #search-popup .offcanvas-body {
+    padding: 28px;
   }
 }
