@@ -858,6 +858,7 @@ h1, .pagetitle {
 }
 .footer-grid {
   grid-template-columns: 56% 22% 22%;
+  grid-column-gap: 0;
 }
 .footer-logo img {
   max-width: 150px;
@@ -1307,6 +1308,36 @@ h1, .pagetitle {
 }
 #search-popup .offcanvas-body {
   padding: 28px 136px 144px;
+}
+
+/* catalog_banner */
+.catalog_banner {
+  position: relative;
+}
+.catalog_banner-img img {
+  display: block;
+}
+.catalog_banner-details {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+.catalog_banner-text {
+  color: var(--color-white);
+  line-height: 26px;
+  font-size: 16px;
+  padding: 0 72px;
+}
+.catalog_banner-title {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 40px;
+  margin: 0 0 24px;
+  font-family: var(--ff2);
 }
 
 @media screen and (max-width: 1200px) {
