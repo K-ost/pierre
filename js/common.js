@@ -69,18 +69,47 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 // recommend
-document.querySelector(".js-recommend").addEventListener("click", (e) => {
-  e.preventDefault();
-  const parent = e.target.closest(".recommendbox");
-  const hidden = parent.children[0];
-  const height = parent.children[0].children[0].offsetHeight;
-  if (!e.target.classList.contains("active")) {
-    e.target.classList.add("active");
-    hidden.style.height = height + "px";
-    e.target.innerHTML = "&uarr; Скрыть &uarr;";
-  } else {
-    e.target.classList.remove("active");
-    hidden.removeAttribute("style");
-    e.target.innerHTML = "&darr; Показать еще &darr;";
-  }
+const recomendBtn = document.querySelector(".js-recommend");
+if (recomendBtn) {
+  recomendBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    const parent = e.target.closest(".recommendbox");
+    const hidden = parent.children[0];
+    const height = parent.children[0].children[0].offsetHeight;
+    if (!e.target.classList.contains("active")) {
+      e.target.classList.add("active");
+      hidden.style.height = height + "px";
+      e.target.innerHTML = "&uarr; Скрыть &uarr;";
+    } else {
+      e.target.classList.remove("active");
+      hidden.removeAttribute("style");
+      e.target.innerHTML = "&darr; Показать еще &darr;";
+    }
+  });
+}
+
+// Dropdown selects
+const selectDropdowns = document.querySelectorAll(
+  ".select_dropdown .dropdown-menu"
+);
+selectDropdowns.forEach((dropdown) => {
+  dropdown.children[0].children[0].classList.add("selected");
+});
+const selectOptions = document.querySelectorAll(".select_dropdown-option");
+selectOptions.forEach((option, index) => {
+  option.addEventListener("click", (e) => {
+    e.preventDefault();
+    const parent = e.target.closest(".select_dropdown");
+    const toggle = parent.children[0];
+    toggle.textContent = e.target.textContent;
+    parent.children[1].children[0].children[0].classList.add("selected");
+
+    Object.values(parent.children[1].children).forEach((el) => {
+      if (el.children[0].classList.contains("selected")) {
+        el.children[0].classList.remove("selected");
+      }
+    });
+
+    e.target.classList.add("selected");
+  });
 });
