@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Каталог</title>
+	<title>Главная</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta name="author" content="">
@@ -17,7 +17,8 @@
 
 <body>
 
-<header class="header">
+<div class="video_container">
+  <header class="header">
 	<div class="header-top">
 		<div class="container-fluid">
 			<div class="header-icons">
@@ -200,188 +201,134 @@
 		</ul>
 	</nav>
 </header><!-- /header -->
-
-<div class="catalog_banner">
-  <div class="catalog_banner-image">
-    <img src="images/uploads/banner.webp" alt="">
-  </div>
-  <div class="catalog_banner-details">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="p-0 col-12 col-lg-6 offset-lg-6">
-          <div class="catalog_banner-text">
-            <div class="catalog_banner-title">Обручальные кольца</div>
-            Im Jahr 1886 präsentierte Tiffany den Verlobungsring, so wie man ihn heute kennt. Wir sind stolz darauf, auf unserer Tradition als führendes Unternehmen im Bereich der Rückverfolgbarkeit von Diamanten mit verantwortungsvoll beschafften, meisterhaft gefertigten Diamantringen aufzubauen, die die Liebe in all ihren Formen feiern.
-          </div>
-        </div>
-      </div>
+  <div class="video_container">
+  <div class="video_container-controls">
+    <div>
+      <button class="mutebtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M2 16V8.99996H5.89286L12 4V20L5.89286 16H2ZM18.5909 12.5L16.0454 9.95455L16.9546 9.04541L19.5 11.5908L22.0454 9.04541L22.9546 9.95455L20.4091 12.5L22.9546 15.0454L22.0454 15.9546L19.5 13.4091L16.9546 15.9546L16.0454 15.0454L18.5909 12.5Z" fill="white"></path>
+        </svg>
+      </button>
+      <button class="unmutebtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M8 15V8.99996H10.8929L16 5V19L10.8929 15H8Z" fill="white"></path>
+        </svg>
+      </button>
     </div>
-  </div>
-</div><!-- /catalog_banner -->
+    <div>
+      <button class="playbtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17 12L8 18V6L17 12Z" fill="white"></path>
+        </svg>
+      </button>
+      <button class="pausebtn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M7.25 5V19H8.75V5H7.25ZM15.25 5L15.25 19H16.75L16.75 5H15.25Z" fill="white"></path>
+        </svg>
+      </button>
+    </div>
+  </div><!-- /video_container-controls -->
+
+  <video autoplay playsinline loop muted data-smallsrc="https://media.tiffany.com/is/content/tco/2024-Icons-HP-Hero-Lock-Video-Mobile-SFCC-2" data-mediumsrc="https://media.tiffany.com/is/content/tco/2024-Icons-HP-Hero-Lock-Video-Mobile-SFCC-2" data-largesrc="https://media.tiffany.com/is/content/tco/2024-Icons-HP-Hero-Lock-Video-Desktop-SFCC-2" data-postermobile="https://media.tiffany.com/is/image/tco/2024-Icons-HP-Hero-Lock-Video-Mobile-SFCC-3" data-posterdesktop="https://media.tiffany.com/is/image/tco/2024-Icons-HP-Hero-Lock-Video-Desktop-SFCC-3" src="https://media.tiffany.com/is/content/tco/2024-Icons-HP-Hero-Lock-Video-Desktop-SFCC-2" poster="https://media.tiffany.com/is/image/tco/2024-Icons-HP-Hero-Lock-Video-Desktop-SFCC-3" data-firstpart="true" data-secondpart="true" data-thirdpart="true" data-fourthpart="true" id="video_header">
+  </video>
+</div><!-- /video_container -->
+</div><!-- /video_container -->
 
 <section class="middle_section">
   <div class="container-fluid">
-    
-    <div class="filterbox">
-  <div class="filterbox-sort">
-    <div class="dropdown select_dropdown">
-  <a href="#" class="select_dropdown-toggle" data-bs-toggle="dropdown">
-    Рекомендации
-  </a>
-  <ul class="dropdown-menu">
-    
-    <li><a class="dropdown-item select_dropdown-option" href="#">Рекомендации</a></li>
-    
-    <li><a class="dropdown-item select_dropdown-option" href="#">Новое в Tiffany</a></li>
-    
-    <li><a class="dropdown-item select_dropdown-option" href="#">Цена: сначала низкая</a></li>
-    
-    <li><a class="dropdown-item select_dropdown-option" href="#">Цена: сначала высокая</a></li>
-    
-  </ul>
-</div><!-- /select_dropdown -->
-  </div>
-  <div class="filterbox-title">
-    <h1>Обручальные кольца</h1>
-    <div class="filterbox-matches"><b>38</b> результатов</div>
-  </div>
-  <button class="btn btn-outlined btn-filter"><span>Фильтр</span></button>
-</div><!-- /filterbox -->
 
-    <div class="grid grid-3 good_grid">
-      <div class="goodbox">
-  <div class="goodbox-img">
-    <a href="product.html">
-      <img src="images/uploads/product5.webp" alt="">
-      <span class="goodbox-hover"><img src="images/uploads/product1.webp" alt=""></span>
-    </a>
+    <article>
+      <h1>Mit Liebe, Seit 1837</h1>
+      <p>Lock by Tiffany, eine zeitlose Ikone, inspiriert von einer Brosche aus dem Jahr 1883, ist ein Symbol der ewigen Liebe.</p>
+      <a href="#" class="btn btn-primary"><span>Beliebtesten Schmuck ansehen</span></a>
+    </article>
+    
+    <div class="carousel carousel-goods">
+  
+  <div class="swiper" id="alsolike-slider">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+  <div class="swipe_good">
+    <div class="swipe_good-img">
+      <a href="#"><img src="images/uploads/download.webp" alt=""></a>
+    </div>
+    <div class="swipe_good-title">
+      <a href="#">Кольцо бриллиантом эмеральд в ореоле</a>
+    </div>
+    <!-- <div class="swipe_good-price">225 998 р.</div> -->
   </div>
-  <div class="goodbox-title">Tiffany Three Stone Verlobungsring mit Seitenedelsteinen im Baguetteschliff in Platin</div>
-  <div class="goodbox-details">
-    <a href="#">Details ansehen</a>
+</div><!-- /slide --><div class="swiper-slide">
+  <div class="swipe_good">
+    <div class="swipe_good-img">
+      <a href="#"><img src="images/uploads/download.webp" alt=""></a>
+    </div>
+    <div class="swipe_good-title">
+      <a href="#">Кольцо с бриллиантом в форме квадрата</a>
+    </div>
+    <!-- <div class="swipe_good-price">135 375 р.</div> -->
   </div>
-</div><!-- /goodbox --><div class="goodbox">
-  <div class="goodbox-img">
-    <a href="product.html">
-      <img src="images/uploads/product5.webp" alt="">
-      <span class="goodbox-hover"><img src="images/uploads/product1.webp" alt=""></span>
-    </a>
+</div><!-- /slide --><div class="swiper-slide">
+  <div class="swipe_good">
+    <div class="swipe_good-img">
+      <a href="#"><img src="images/uploads/download.webp" alt=""></a>
+    </div>
+    <div class="swipe_good-title">
+      <a href="#">Кольцо с бриллиантом Принцесса</a>
+    </div>
+    <!-- <div class="swipe_good-price">135 375 р.</div> -->
   </div>
-  <div class="goodbox-title">Tiffany & Co. Schlumberger Knospen-Verlobungsring im runden Brillantschliff mit einem Diamantring in Platin</div>
-  <div class="goodbox-details">
-    <a href="#">Details ansehen</a>
+</div><!-- /slide --><div class="swiper-slide">
+  <div class="swipe_good">
+    <div class="swipe_good-img">
+      <a href="#"><img src="images/uploads/download.webp" alt=""></a>
+    </div>
+    <div class="swipe_good-title">
+      <a href="#">Кольцо с бриллиантом принцесса из желтого золота</a>
+    </div>
+    <!-- <div class="swipe_good-price">135 375 р.</div> -->
   </div>
-</div><!-- /goodbox --><div class="goodbox">
-  <div class="goodbox-img">
-    <a href="product.html">
-      <img src="images/uploads/product5.webp" alt="">
-      <span class="goodbox-hover"><img src="images/uploads/product1.webp" alt=""></span>
-    </a>
+</div><!-- /slide --><div class="swiper-slide">
+  <div class="swipe_good">
+    <div class="swipe_good-img">
+      <a href="#"><img src="images/uploads/download.webp" alt=""></a>
+    </div>
+    <div class="swipe_good-title">
+      <a href="#">Кольцо бриллиантом эмеральд в ореоле</a>
+    </div>
+    <!-- <div class="swipe_good-price">225 998 р.</div> -->
   </div>
-  <div class="goodbox-title">Der Tiffany® Setting Verlobungsring in 18 Karat Roségold</div>
-  <div class="goodbox-details">
-    <a href="#">Details ansehen</a>
+</div><!-- /slide --><div class="swiper-slide">
+  <div class="swipe_good">
+    <div class="swipe_good-img">
+      <a href="#"><img src="images/uploads/download.webp" alt=""></a>
+    </div>
+    <div class="swipe_good-title">
+      <a href="#">Кольцо с бриллиантом в форме квадрата</a>
+    </div>
+    <!-- <div class="swipe_good-price">135 375 р.</div> -->
   </div>
-</div><!-- /goodbox --><div class="goodbox">
-  <div class="goodbox-img">
-    <a href="product.html">
-      <img src="images/uploads/product5.webp" alt="">
-      <span class="goodbox-hover"><img src="images/uploads/product1.webp" alt=""></span>
-    </a>
+</div><!-- /slide --><div class="swiper-slide">
+  <div class="swipe_good">
+    <div class="swipe_good-img">
+      <a href="#"><img src="images/uploads/download.webp" alt=""></a>
+    </div>
+    <div class="swipe_good-title">
+      <a href="#">Кольцо с бриллиантом Принцесса</a>
+    </div>
+    <!-- <div class="swipe_good-price">135 375 р.</div> -->
   </div>
-  <div class="goodbox-title">Tiffany Three Stone Verlobungsring mit Seitenedelsteinen im Baguetteschliff in Platin</div>
-  <div class="goodbox-details">
-    <a href="#">Details ansehen</a>
-  </div>
-</div><!-- /goodbox --><div class="goodbox">
-  <div class="goodbox-img">
-    <a href="product.html">
-      <img src="images/uploads/product5.webp" alt="">
-      <span class="goodbox-hover"><img src="images/uploads/product1.webp" alt=""></span>
-    </a>
-  </div>
-  <div class="goodbox-title">Tiffany & Co. Schlumberger Knospen-Verlobungsring im runden Brillantschliff mit einem Diamantring in Platin</div>
-  <div class="goodbox-details">
-    <a href="#">Details ansehen</a>
-  </div>
-</div><!-- /goodbox --><div class="goodbox">
-  <div class="goodbox-img">
-    <a href="product.html">
-      <img src="images/uploads/product5.webp" alt="">
-      <span class="goodbox-hover"><img src="images/uploads/product1.webp" alt=""></span>
-    </a>
-  </div>
-  <div class="goodbox-title">Der Tiffany® Setting Verlobungsring in 18 Karat Roségold</div>
-  <div class="goodbox-details">
-    <a href="#">Details ansehen</a>
-  </div>
-</div><!-- /goodbox --><div class="goodbox">
-  <div class="goodbox-img">
-    <a href="product.html">
-      <img src="images/uploads/product5.webp" alt="">
-      <span class="goodbox-hover"><img src="images/uploads/product1.webp" alt=""></span>
-    </a>
-  </div>
-  <div class="goodbox-title">Tiffany Three Stone Verlobungsring mit Seitenedelsteinen im Baguetteschliff in Platin</div>
-  <div class="goodbox-details">
-    <a href="#">Details ansehen</a>
-  </div>
-</div><!-- /goodbox --><div class="goodbox">
-  <div class="goodbox-img">
-    <a href="product.html">
-      <img src="images/uploads/product5.webp" alt="">
-      <span class="goodbox-hover"><img src="images/uploads/product1.webp" alt=""></span>
-    </a>
-  </div>
-  <div class="goodbox-title">Tiffany & Co. Schlumberger Knospen-Verlobungsring im runden Brillantschliff mit einem Diamantring in Platin</div>
-  <div class="goodbox-details">
-    <a href="#">Details ansehen</a>
-  </div>
-</div><!-- /goodbox --><div class="goodbox">
-  <div class="goodbox-img">
-    <a href="product.html">
-      <img src="images/uploads/product5.webp" alt="">
-      <span class="goodbox-hover"><img src="images/uploads/product1.webp" alt=""></span>
-    </a>
-  </div>
-  <div class="goodbox-title">Der Tiffany® Setting Verlobungsring in 18 Karat Roségold</div>
-  <div class="goodbox-details">
-    <a href="#">Details ansehen</a>
-  </div>
-</div><!-- /goodbox -->
-    </div><!-- /good_grid -->
+</div><!-- /slide -->
+    </div>
+    <div class="carousel-navigation">
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div><!-- /swiper -->
+</div><!-- /carousel -->
     
   </div><!-- /container -->
 </section><!-- /middle_section -->
-
-<div class="middle_section catalog_description">
-  <div class="container-fluid">
-    <div class="col-10 col-lg-8 offset-1 offset-lg-2">
-      <h2>Обручальные кольца</h2>
-      <article class="catalog_description-small">
-        <p>Только Тиффани могла создать кольцо с бриллиантом, действительно достойное вашей истории любви. Знаменитая коллекция обручальных колец Tiffany на протяжении поколений была неотъемлемой частью величайших любовных историй в мире. От наших знаменитых бриллиантов круглой огранки до квадратных изделий, изумрудной огранки и бриллиантов в форме груши и сердца — каждый сверкающий шедевр является символом нашего знаменитого мастерства, высоких стандартов и традиций совершенства. Откройте для себя культовое кольцо Tiffany® Setting, символ любовных историй с 1886 года, или обручальное кольцо Tiffany True®, нашу новейшую икону современной любви. В наших изделиях Tiffany Soleste присутствует бриллиантовый ореол, который красиво подчеркивает центральный бриллиант или цветной драгоценный камень. Если вы ищете очаровательный стиль, выберите обручальное кольцо с желтым бриллиантом — драгоценным камнем, особо ценимым в необыкновенной истории Tiffany. Откройте для себя наше первое мужское обручальное кольцо Charles Tiffany Setting, дань современной романтике для нового поколения.</p>
-      </article>
-      <ul class="catalog_description-nav">
-        <li><a href="#">кольца с бриллиантом 1 карат</a></li>
-        <li><a href="#">кольца с бриллиантами 2 карата</a></li>
-        <li><a href="#">Обручальные кольца и комплекты</a></li>
-        <li><a href="#">Партнерские кольца</a></li>
-      </ul>
-    </div>
-  </div>
-</div><!-- /middle_section -->
-
-<div class="middle_section catalog_description">
-  <div class="container-fluid">
-    <div class="catalog_description-text">
-      <div class="catalog_description-title">Проконсультируйтесь с экспертом по бриллиантам Tiffany</div>
-      <article>
-        <p>Проконсультируйтесь с экспертом по бриллиантам Tiffany Эксперты по бриллиантам Tiffany могут помочь вам выбрать обручальное кольцо, персонализировать обручальное кольцо или найти специальный подарок на годовщину.</p>
-      </article>
-      <a href="#" class="btn btn-outlined"><span>Записаться на прием</span></a>
-    </div>
-  </div>
-</div><!-- /middle_section -->
 
 <div class="breadcrumbs">
   <div class="container-fluid">
