@@ -1648,6 +1648,9 @@ h1, .pagetitle {
   border: 0;
   padding-bottom: 0;
 }
+.basket_item-list {
+  margin: 0 0 48px;
+}
 .basket_item-title {
   margin: 0 0 10px;
   font-family: var(--ff2);
@@ -1673,6 +1676,7 @@ h1, .pagetitle {
 .basket_item-price {
   font-weight: 700;
   text-align: right;
+  white-space: nowrap;
 }
 .basket_item-footer {
   display: flex;
@@ -2094,9 +2098,19 @@ h1, .pagetitle {
   }
 
   /* basket_item */
+  .basket_header {
+    border-top: 0;
+    padding: 24px 0;
+  }
+
   .basket_item {
     grid-template-columns: 90px 1fr;
     grid-column-gap: 20px;
+    padding: 24px 0;
+  }
+  .basket_item-price {
+    margin-left: 110px;
+    margin-top: 20px;
   }
 
   /* Checkout */
