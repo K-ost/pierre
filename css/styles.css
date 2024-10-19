@@ -490,6 +490,13 @@ h1, .pagetitle {
 .offcanvas-body {
   padding: var(--pd);
   padding-top: 0;
+  padding-bottom: 0;
+}
+.offcanvas-body:last-child {
+  padding-bottom: var(--pd);
+}
+.offcanvas-footer {
+  padding: var(--pd);
 }
 .offcanvas-start, .offcanvas-end {
   max-width: 520px;
@@ -1811,6 +1818,18 @@ h1, .pagetitle {
   font-weight: 700;
   margin-left: 30px;
   white-space: nowrap;
+}
+
+/* filter-popup */
+#filter-popup .offcanvas-footer {
+  display: flex;
+}
+#filter-popup .offcanvas-footer .btn {
+  width: 100%;
+  margin-right: 16px;
+}
+#filter-popup .offcanvas-footer .btn:last-child {
+  margin-right: 0;
 }
 
 @media screen and (max-width: 1200px) {
