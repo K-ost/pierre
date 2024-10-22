@@ -21,6 +21,22 @@ function carouselCreator(id, num = 4, space = 24) {
 const reviewsSlider = carouselCreator("#reviews-slider", 5);
 const alsolikeSlider = carouselCreator("#alsolike-slider", 4);
 
+// iconsSlider
+const iconsSlider = new Swiper("#icons_slider", {
+  slidesPerView: 1,
+  spaceBetween: 140,
+  loop: true,
+  centeredSlides: true,
+  pagination: {
+    el: `#icons_slider .swiper-pagination`,
+    type: "progressbar",
+  },
+  navigation: {
+    nextEl: `#icons_slider .swiper-button-next`,
+    prevEl: `#icons_slider .swiper-button-prev`,
+  },
+});
+
 // js-foot_title
 if (document.documentElement.clientWidth < 1200) {
   const footTitles = document.querySelectorAll(".js-foot_title");
