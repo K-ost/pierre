@@ -18,7 +18,7 @@ function carouselCreator(id, num = 4, space = 24) {
     },
   });
 }
-const reviewsSlider = carouselCreator("#reviews-slider", 4);
+const reviewsSlider = carouselCreator("#reviews-slider", 5);
 const alsolikeSlider = carouselCreator("#alsolike-slider", 4);
 
 // js-foot_title
@@ -115,36 +115,36 @@ selectOptions.forEach((option, index) => {
 });
 
 // Video
-const pauseVideoBtn = document.querySelector(".pausebtn");
-const playVideoBtn = document.querySelector(".playbtn");
-const muteVideoBtn = document.querySelector(".mutebtn");
-const unmuteVideoBtn = document.querySelector(".unmutebtn");
-const videobox = document.querySelector("#video_header");
-if (
-  pauseVideoBtn &&
-  playVideoBtn &&
-  muteVideoBtn &&
-  unmuteVideoBtn &&
-  videobox
-) {
-  pauseVideoBtn.addEventListener("click", () => {
-    videobox.pause();
-    pauseVideoBtn.style.display = "none";
-    playVideoBtn.style.display = "block";
-  });
-  playVideoBtn.addEventListener("click", () => {
-    videobox.play();
-    pauseVideoBtn.style.display = "block";
-    playVideoBtn.style.display = "none";
-  });
-  muteVideoBtn.addEventListener("click", () => {
-    videobox.muted = false;
-    muteVideoBtn.style.display = "none";
-    unmuteVideoBtn.style.display = "block";
-  });
-  unmuteVideoBtn.addEventListener("click", () => {
-    videobox.muted = true;
-    muteVideoBtn.style.display = "block";
-    unmuteVideoBtn.style.display = "none";
-  });
-}
+// const pauseVideoBtn = document.querySelector(".pausebtn");
+// const playVideoBtn = document.querySelector(".playbtn");
+// const muteVideoBtn = document.querySelector(".mutebtn");
+// const unmuteVideoBtn = document.querySelector(".unmutebtn");
+// const videobox = document.querySelector("#video_header");
+// if (
+//   pauseVideoBtn &&
+//   playVideoBtn &&
+//   muteVideoBtn &&
+//   unmuteVideoBtn &&
+//   videobox
+// ) {
+//   pauseVideoBtn.addEventListener("click", () => {
+//     videobox.pause();
+//     pauseVideoBtn.style.display = "none";
+//     playVideoBtn.style.display = "block";
+//   });
+//   playVideoBtn.addEventListener("click", () => {
+//     videobox.play();
+//     pauseVideoBtn.style.display = "block";
+//     playVideoBtn.style.display = "none";
+//   });
+//   muteVideoBtn.addEventListener("click", () => {
+//     videobox.muted = false;
+//     muteVideoBtn.style.display = "none";
+//     unmuteVideoBtn.style.display = "block";
+//   });
+//   unmuteVideoBtn.addEventListener("click", () => {
+//     videobox.muted = true;
+//     muteVideoBtn.style.display = "block";
+//     unmuteVideoBtn.style.display = "none";
+//   });
+// }
