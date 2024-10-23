@@ -9,6 +9,7 @@
   --color-text: #5a5a5a;
   --color-black: #000000;
   --color-light: #fbf9f7;
+  --color-light-hover: #f1f1f1;
   --color-white: #ffffff;
   --color-green: #009cad;
   --color-danger: #e50739;
@@ -255,7 +256,7 @@ h1, .pagetitle {
 
 /* question_mark */
 .question_mark {
-  background: var(--color-primary);
+  background: var(--color-black);
   text-align: center;
   width: 18px;
   height: 18px;
@@ -693,8 +694,8 @@ h1, .pagetitle {
   flex-wrap: wrap;
   justify-content: center;
 }
-.recommendbox .btn {
-  margin: 0 3px 6px;
+.recommendbox .border_link {
+  margin: 0 12px 10px;
 }
 .recommendbox-more {
   padding-top: 18px;
@@ -1266,8 +1267,48 @@ h1, .pagetitle {
   background: var(--color-white);
   border-color: var(--color-black);
 }
+.small_filter.bordered .small_filter-item span {
+  background: var(--color-light);
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid transparent;
+}
+.small_filter.bordered .small_filter-item input:checked + span {
+  background: var(--color-light-hover);
+  border-bottom-color: var(--color-black);
+}
 .small_filter.square .small_filter-item span {
   border-radius: 0;
+}
+
+/* selecting_metal */
+.selecting_metal {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 10px;
+  margin: 0 0 12px;
+}
+.selecting_metal-img {
+  border-bottom: 1px solid transparent;
+  display: block;
+  background: var(--color-light);
+  margin: 0 0 8px;
+}
+.selecting_metal-img img {
+  filter: brightness(0.98);
+  transition: filter 200ms ease-in-out;
+}
+.selecting_metal-img:hover img {
+  filter: brightness(0.95);
+}
+.selecting_metal-item.active .selecting_metal-img {
+  border-bottom-color: var(--color-black);
+}
+.selecting_metal-title {
+  display: block;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
 }
 
 /* features */
