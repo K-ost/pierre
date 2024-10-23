@@ -20,6 +20,8 @@ function carouselCreator(id, num = 4, space = 24) {
 }
 const reviewsSlider = carouselCreator("#reviews-slider", 5);
 const alsolikeSlider = carouselCreator("#alsolike-slider", 4);
+const reviewsCatalogSlider = carouselCreator("#reviews_catalog", 3);
+const productVideos = carouselCreator("#productVideos", 3);
 
 // iconsSlider
 const iconsSlider = new Swiper("#icons_slider", {
