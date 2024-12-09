@@ -154,12 +154,27 @@ const calcRadioButtons = document.querySelectorAll(".small_filter-item input");
 if (calcRadioButtons) {
   calcRadioButtons.forEach((radio) => {
     radio.addEventListener("change", (e) => {
-      const { value } = e.target;
+      const { value, name } = e.target;
+      const title = e.target.getAttribute("data-title");
+
       let child = e.target.closest(".small_filter").children[0];
       let titleCalc = child.children[1];
       let chooseWord = child.children[0].children[0];
       chooseWord.style.display = "none";
-      titleCalc.innerHTML = `: <b>${value}</b>`;
+      titleCalc.innerHTML = `: <b>${title}</b>`;
+
+      document.querySelector(
+        `#featTitle-${name}`
+      ).innerHTML = `: <b>${title}</b>`;
+
+      document.querySelectorAll(".feaures_info-text").forEach((el) => {
+        if (el.id.includes(name)) {
+          el.style.display = "none";
+        }
+      });
+
+      document.querySelector(`#featInfo-${name}-${value}`).style.display =
+        "block";
     });
   });
 }

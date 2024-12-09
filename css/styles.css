@@ -2656,6 +2656,47 @@ textarea.form-control {
   height: 100%;
 }
 
+/* feaures_info */
+.feaures_info {
+  margin-bottom: var(--mb);
+}
+.feaures_info .pagetitle {
+  margin: 0 0 28px;
+}
+.feaures_info b {
+  font-weight: 600;
+}
+.feaures_info-item {
+  border-bottom: 1px solid rgba(242, 242, 242, 0.9);
+  padding: 0 0 var(--mb);
+  margin: 0 0 var(--mb);
+}
+.feaures_info-item:last-child {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.feaures_info-item p:last-child {
+  margin-bottom: 0;
+}
+.feaures_info-id {
+  text-align: center;
+  margin: 0 0 44px;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+.feaures_info-title {
+  margin: 0 0 34px;
+  font-size: 24px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.feaures_info-text {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   :root {
     --mb2: 40px;
