@@ -167,14 +167,15 @@ if (calcRadioButtons) {
         `#featTitle-${name}`
       ).innerHTML = `: <b>${title}</b>`;
 
-      document.querySelectorAll(".feaures_info-text").forEach((el) => {
+      document.querySelectorAll(".feaures_info-details").forEach((el) => {
         if (el.id.includes(name)) {
-          el.style.display = "none";
+          el.classList.remove("opened");
         }
       });
 
-      document.querySelector(`#featInfo-${name}-${value}`).style.display =
-        "block";
+      document
+        .querySelector(`#featInfo-${name}-${value}`)
+        .classList.add("opened");
     });
   });
 }

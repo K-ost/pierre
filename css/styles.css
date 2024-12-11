@@ -2693,8 +2693,31 @@ textarea.form-control {
   font-weight: 300;
   text-transform: uppercase;
 }
-.feaures_info-text {
+.feaures_info-details {
   display: none;
+  align-items: flex-start;
+}
+.feaures_info-details.opened {
+  display: flex;
+}
+.feaures_info-details p:first-child {
+  margin-top: 0;
+}
+.feaures_info-details .order2 {
+  order: 2;
+}
+.feaures_info-details .order1 {
+  order: 1;
+}
+.feaures_info-img {
+  min-width: 300px;
+  max-width: 300px;
+}
+.feaures_info-img.order1 {
+  margin-right: 30px;
+}
+.feaures_info-img.order2 {
+  margin-left: 30px;
 }
 
 @media screen and (max-width: 1200px) {
