@@ -2660,42 +2660,33 @@ textarea.form-control {
 .feaures_info {
   margin-bottom: var(--mb);
 }
-.feaures_info .pagetitle {
-  margin: 0 0 28px;
-}
 .feaures_info b {
   font-weight: 600;
 }
 .feaures_info-item {
   border-bottom: 1px solid rgba(242, 242, 242, 0.9);
-  padding: 0 0 var(--mb);
+  padding: 0 80px var(--mb);
   margin: 0 0 var(--mb);
+  font-size: 12px;
+  line-height: 20px;
 }
 .feaures_info-item:last-child {
   border: 0;
   margin: 0;
-  padding: 0;
+  padding-bottom: 0;
 }
 .feaures_info-item p:last-child {
   margin-bottom: 0;
 }
-.feaures_info-id {
-  text-align: center;
-  margin: 0 0 44px;
-  font-size: 16px;
-  font-weight: 300;
-  letter-spacing: 2px;
-}
 .feaures_info-title {
-  margin: 0 0 34px;
-  font-size: 24px;
+  margin: 0 0 24px;
   letter-spacing: 2px;
   font-weight: 300;
   text-transform: uppercase;
 }
 .feaures_info-details {
   display: none;
-  align-items: flex-start;
+  align-items: center;
 }
 .feaures_info-details.opened {
   display: flex;

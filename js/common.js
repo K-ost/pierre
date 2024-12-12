@@ -155,13 +155,17 @@ if (calcRadioButtons) {
   calcRadioButtons.forEach((radio) => {
     radio.addEventListener("change", (e) => {
       const { value, name } = e.target;
-      const title = e.target.getAttribute("data-title");
+      let title = e.target.getAttribute("data-title");
 
       let child = e.target.closest(".small_filter").children[0];
       let titleCalc = child.children[1];
       let chooseWord = child.children[0].children[0];
       chooseWord.style.display = "none";
       titleCalc.innerHTML = `: <b>${title}</b>`;
+
+      if (name === "quality") {
+        child.children[0].children[1].textContent = "Чистота бриллианта";
+      }
 
       document.querySelector(
         `#featTitle-${name}`
