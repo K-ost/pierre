@@ -2665,10 +2665,11 @@ textarea.form-control {
 }
 .feaures_info-item {
   border-bottom: 1px solid rgba(242, 242, 242, 0.9);
-  padding: 0 80px var(--mb);
-  margin: 0 0 var(--mb);
-  font-size: 12px;
+  padding: 0 80px 66px;
+  margin: 0 0 66px;
+  font-size: 13px;
   line-height: 20px;
+  color: rgba(0, 0, 0, 0.6);
 }
 .feaures_info-item:last-child {
   border: 0;
@@ -2679,6 +2680,8 @@ textarea.form-control {
   margin-bottom: 0;
 }
 .feaures_info-title {
+  color: var(--color-black);
+  font-size: 14px;
   margin: 0 0 24px;
   letter-spacing: 2px;
   font-weight: 300;
@@ -2705,10 +2708,10 @@ textarea.form-control {
   max-width: 300px;
 }
 .feaures_info-img.order1 {
-  margin-right: 30px;
+  margin-right: 66px;
 }
 .feaures_info-img.order2 {
-  margin-left: 30px;
+  margin-left: 66px;
 }
 
 @media screen and (max-width: 1200px) {
