@@ -2658,7 +2658,7 @@ textarea.form-control {
 
 /* feaures_info */
 .feaures_info {
-  margin-bottom: var(--mb);
+  padding: 60px 0 120px;
 }
 .feaures_info b {
   font-weight: 600;
@@ -2707,7 +2707,7 @@ textarea.form-control {
   min-width: 300px;
   max-width: 300px;
 }
-.feaures_info-img.order1 {
+x .feaures_info-img.order1 {
   margin-right: 66px;
 }
 .feaures_info-img.order2 {
