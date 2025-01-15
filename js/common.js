@@ -124,9 +124,7 @@ if (recomendBtns) {
 }
 
 // Dropdown selects
-const selectDropdowns = document.querySelectorAll(
-  ".select_dropdown .dropdown-menu"
-);
+const selectDropdowns = document.querySelectorAll(".select_dropdown .dropdown-menu");
 selectDropdowns.forEach((dropdown) => {
   dropdown.children[0].children[0].classList.add("selected");
 });
@@ -167,9 +165,7 @@ if (calcRadioButtons) {
         child.children[0].children[1].textContent = "Чистота бриллианта";
       }
 
-      document.querySelector(
-        `#featTitle-${name}`
-      ).innerHTML = `: <b>${title}</b>`;
+      document.querySelector(`#featTitle-${name}`).innerHTML = `: <b>${title}</b>`;
 
       document.querySelectorAll(".feaures_info-details").forEach((el) => {
         if (el.id.includes(name)) {
@@ -177,9 +173,7 @@ if (calcRadioButtons) {
         }
       });
 
-      document
-        .querySelector(`#featInfo-${name}-${value}`)
-        .classList.add("opened");
+      document.querySelector(`#featInfo-${name}-${value}`).classList.add("opened");
     });
   });
 }

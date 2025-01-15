@@ -485,7 +485,12 @@ h3 {
   color: var(--color-grey);
 }
 .form-control:focus {
-  border-bottom-color: var(--color-black);
+  border-color: var(--color-black);
+}
+.form-control-simple {
+  border: 1px solid var(--color-border);
+  height: 50px;
+  padding: 8px 18px;
 }
 
 .form-field {
@@ -1040,6 +1045,41 @@ textarea.form-control {
 .module h3 {
   text-align: center;
   margin: 0 0 40px;
+}
+
+/* radio_group */
+.radio_group {
+  margin: 0 0 32px;
+}
+.radio_group label {
+  display: block;
+  position: relative;
+  padding-left: 38px;
+}
+.radio_group input[type=radio] {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.radio_group-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 22px;
+  display: block;
+}
+.radio_group-text {
+  display: block;
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--color-text);
+}
+.radio_group-hidden {
+  padding-top: 12px;
+  display: none;
+}
+input[type=radio]:checked + .radio_group-hidden {
+  display: block;
 }
 
 /* header */

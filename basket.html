@@ -290,8 +290,79 @@
             </div>
           </div>
           <div class="form-field">
-            <button class="btn btn-block">Перейти к деталям о доставке</button>
+            <button type="button" class="btn btn-block">Перейти к деталям о доставке</button>
           </div>
+
+          <div id="paymentScreen">
+            <h2>Оплата</h2>
+            <div class="radio_group">
+  <label>
+    <span class="radio_group-title">Оплатить сейчас</span>
+    <span class="radio_group-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga laborum nulla beatae veniam? Veritatis, rem quod error nostrum qui esse laudantium magnam quibusdam ex porro quisquam ipsum sit illo.</span>
+    <input type="radio" class="form-radio" name="payment">
+    
+  </label>
+</div><!-- /radio_group -->
+
+<div class="radio_group">
+  <label>
+    <span class="radio_group-title">Оплатить по счету</span>
+    <span class="radio_group-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga laborum nulla beatae veniam? Veritatis, rem quod error nostrum qui esse laudantium magnam quibusdam ex porro quisquam ipsum sit illo.</span>
+    <input type="radio" class="form-radio" name="payment">
+    
+  </label>
+</div><!-- /radio_group -->
+
+<div class="radio_group">
+  <label>
+    <span class="radio_group-title">Рассрочка или кредит до 500 000 руб.</span>
+    <span class="radio_group-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga laborum nulla beatae veniam? Veritatis, rem quod error nostrum qui esse laudantium magnam quibusdam ex porro quisquam ipsum sit illo.</span>
+    <input type="radio" class="form-radio" name="payment">
+    
+  </label>
+</div><!-- /radio_group -->
+
+<div class="radio_group">
+  <label>
+    <span class="radio_group-title">Оплата частями Яндекс.Сплит</span>
+    <span class="radio_group-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga laborum nulla beatae veniam? Veritatis, rem quod error nostrum qui esse laudantium magnam quibusdam ex porro quisquam ipsum sit illo.</span>
+    <input type="radio" class="form-radio" name="payment">
+    
+  </label>
+</div><!-- /radio_group -->
+
+<div class="radio_group">
+  <label>
+    <span class="radio_group-title">Оплатить позже, нужна консультация</span>
+    <span class="radio_group-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga laborum nulla beatae veniam? Veritatis, rem quod error nostrum qui esse laudantium magnam quibusdam ex porro quisquam ipsum sit illo.</span>
+    <input type="radio" class="form-radio" name="payment">
+    
+  </label>
+</div><!-- /radio_group -->
+          </div><!-- #paymentScreen -->
+          
+          <div id="deliveryScreen">
+            <h2>Доставка</h2>
+            <div class="radio_group">
+  <label>
+    <span class="radio_group-title">Нужна доставка</span>
+    
+    <input type="radio" class="form-radio" name="delivery">
+    <div class="radio_group-hidden">
+      <input type="text" class="form-control form-control-simple" placeholder="Адрес">
+    </div>
+  </label>
+</div><!-- /radio_group -->
+
+<div class="radio_group">
+  <label>
+    <span class="radio_group-title">Заберу сам из шоурума</span>
+    <span class="radio_group-text">ул. Брянская, д. 5</span>
+    <input type="radio" class="form-radio" name="delivery">
+    
+  </label>
+</div><!-- /radio_group -->
+          </div><!-- #deliveryScreen -->
         </form>
       </div>
 
@@ -399,14 +470,6 @@
         <div class="checkout_line-name">Доставка со 100% страхованием</div>
       </div>
     </div><!-- /deliveries -->
-
-    <!-- <div class="checkout_line checkout_line-total">
-      <div class="checkout_line-name"><b>Ориентировочная общая сумма</b></div>
-      <div class="checkout_line-value">€ 2700</div>
-    </div> -->
-    <!-- <div class="checkout_line checkout_line-last">
-      <div class="checkout_line-name">Бесплатная стандартная доставка и возврат</div>
-    </div> -->
   </div><!-- /checkout_box-top -->
 
   <div class="checkout_box-bottom">
