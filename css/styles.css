@@ -1082,8 +1082,14 @@ textarea.form-control {
   padding-top: 12px;
   display: none;
 }
+.radio_group-hidden .form-field {
+  margin-bottom: 12px;
+}
 input[type=radio]:checked + .radio_group-hidden {
   display: block;
+}
+.radio_group p {
+  margin: 0 0 10px;
 }
 
 /* header */
