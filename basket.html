@@ -225,45 +225,32 @@
 
     <div class="row">
       <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 order-2 order-lg-1">
-        <div class="steps_row">
-  <div class="steps_item steps_item-1 active">
-    <div class="steps_item-number">1</div>
-    <div class="steps_item-title">Заказ</div>
-  </div>
-  <div class="steps_item steps_item-2">
-    <div class="steps_item-number">2</div>
-    <div class="steps_item-title">Доставка</div>
-  </div>
-  <div class="steps_item steps_item-3">
-    <div class="steps_item-number">3</div>
-    <div class="steps_item-title">Оплата</div>
-  </div>
-</div><!-- /steps_row -->
-
         <form action="#">
           <div class="basket_screen">
             <h2>Личные данные</h2>
-            <div class="form-field">
-              <input type="text" class="form-control form-control-simple" placeholder="Фамилия Имя Отчество">
-            </div>
+            <div class="form-floating mb-3">
+  <input type="text" class="form-control" placeholder="Фамилия Имя Отчество">
+  <label>Фамилия Имя Отчество</label>
+</div>
             <div class="row">
-              <div class="col-12 col-lg-6 form-field">
-                <input type="tel" class="form-control form-control-simple" placeholder="Телефон">
+              <div class="col-12 col-lg-6">
+                <div class="form-floating mb-3">
+  <input type="tel" class="form-control" placeholder="Телефон">
+  <label>Телефон</label>
+</div>
               </div>
-              <div class="col-12 col-lg-6 form-field">
-                <input type="email" class="form-control form-control-simple" placeholder="Электронная почта">
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-12 col-lg-6 form-field">
-                <input type="text" class="form-control form-control-simple" placeholder="Город">
-              </div>
-              <div class="col-12 col-lg-6 form-field">
-                <input type="text" class="form-control form-control-simple" placeholder="Лазерная гравировка">
+              <div class="col-12 col-lg-6">
+                <div class="form-floating mb-3">
+  <input type="email" class="form-control" placeholder="Электронная почта">
+  <label>Электронная почта</label>
+</div>
               </div>
             </div>
             <div class="form-field">
-              <textarea class="form-control form-control-simple" placeholder="Комментарии к заказу"></textarea>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Комментарии к заказу"></textarea>
+                <label>Комментарии к заказу</label>
+              </div>
             </div>
           </div>
 
