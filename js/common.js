@@ -265,3 +265,14 @@ if (header && document.documentElement.clientWidth > 1000) {
     lastTop = dirPoint;
   });
 }
+
+// Checkout steps
+function checkoutStep(btn, block, step) {
+  document.querySelector(btn).addEventListener("click", (e) => {
+    e.target.style.display = "none";
+    document.querySelector(block).style.display = "block";
+    document.querySelector(step).classList.add("active");
+  });
+}
+checkoutStep(".js-paymentScreen", "#paymentScreen", ".steps_item-2");
+checkoutStep(".js-deliveryScreen", "#deliveryScreen", ".steps_item-3");

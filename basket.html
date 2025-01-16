@@ -224,76 +224,60 @@
   <div class="container-fluid">
 
     <div class="row">
-      <div class="col-12 col-lg-6">
+      <div class="col-12 col-lg-6 order-2 order-lg-1">
         <div class="steps_row">
-  <div class="steps_item active">
+  <div class="steps_item steps_item-1 active">
     <div class="steps_item-number">1</div>
     <div class="steps_item-title">Заказ</div>
   </div>
-  <div class="steps_item">
+  <div class="steps_item steps_item-2">
     <div class="steps_item-number">2</div>
     <div class="steps_item-title">Доставка</div>
   </div>
-  <div class="steps_item">
+  <div class="steps_item steps_item-3">
     <div class="steps_item-number">3</div>
     <div class="steps_item-title">Оплата</div>
   </div>
 </div><!-- /steps_row -->
 
         <form action="#">
-          <div class="form-field">
-            <div class="form-floating">
-              <input type="text" class="form-control" placeholder="Фамилия">
-              <label>Фамилия</label>
+          <div class="basket_screen">
+            <div class="row">
+              <div class="col-12 col-lg-6 form-field">
+                <input type="text" class="form-control form-control-simple" placeholder="Фамилия">
+              </div>
+              <div class="col-12 col-lg-6 form-field">
+                <input type="text" class="form-control form-control-simple" placeholder="Имя">
+              </div>
+              <div class="col-12 col-lg-6 form-field">
+                <input type="text" class="form-control form-control-simple" placeholder="Отчество">
+              </div>
             </div>
-          </div>
-          <div class="form-field">
-            <div class="form-floating">
-              <input type="text" class="form-control" placeholder="Имя">
-              <label>Имя</label>
+            <div class="row">
+              <div class="col-12 col-lg-6 form-field">
+                <input type="tel" class="form-control form-control-simple" placeholder="Телефон">
+              </div>
+              <div class="col-12 col-lg-6 form-field">
+                <input type="email" class="form-control form-control-simple" placeholder="Электронная почта">
+              </div>
             </div>
-          </div>
-          <div class="form-field">
-            <div class="form-floating">
-              <input type="text" class="form-control" placeholder="Отчество">
-              <label>Отчество</label>
+            <div class="row">
+              <div class="col-12 col-lg-6 form-field">
+                <input type="text" class="form-control form-control-simple" placeholder="Город">
+              </div>
+              <div class="col-12 col-lg-6 form-field">
+                <input type="text" class="form-control form-control-simple" placeholder="Лазерная гравировка">
+              </div>
             </div>
-          </div>
-          <div class="form-field">
-            <div class="form-floating">
-              <input type="tel" class="form-control" placeholder="Телефон">
-              <label>Телефон</label>
+            <div class="form-field">
+              <textarea class="form-control form-control-simple" placeholder="Комментарии к заказу"></textarea>
             </div>
-          </div>
-          <div class="form-field">
-            <div class="form-floating">
-              <input type="email" class="form-control" placeholder="Электронная почта">
-              <label>Электронная почта</label>
+            <div class="form-field mt-4">
+              <button type="button" class="btn btn-block js-paymentScreen">Перейти к деталям об оплате</button>
             </div>
-          </div>
-          <div class="form-field">
-            <div class="form-floating">
-              <input type="text" class="form-control" placeholder="Город">
-              <label>Город</label>
-            </div>
-          </div>
-          <div class="form-field">
-            <div class="form-floating">
-              <input type="text" class="form-control" placeholder="Лазерная гравировка">
-              <label>Лазерная гравировка</label>
-            </div>
-          </div>
-          <div class="form-field">
-            <div class="form-floating">
-              <textarea class="form-control" placeholder="Комментарии к заказу"></textarea>
-              <label>Комментарии к заказу</label>
-            </div>
-          </div>
-          <div class="form-field">
-            <button type="button" class="btn btn-block">Перейти к деталям о доставке</button>
           </div>
 
-          <div id="paymentScreen">
+          <div class="basket_screen hidden" id="paymentScreen">
             <h2>Оплата</h2>
             <div class="radio_group">
   <label>
@@ -339,9 +323,13 @@
     
   </label>
 </div><!-- /radio_group -->
+
+<div class="form-field mt-4">
+  <button type="button" class="btn btn-block js-deliveryScreen">Перейти к деталям о доставке</button>
+</div>
           </div><!-- #paymentScreen -->
           
-          <div id="deliveryScreen">
+          <div class="basket_screen hidden" id="deliveryScreen">
             <h2>Доставка</h2>
             <div class="radio_group">
   <label>
@@ -362,11 +350,15 @@
     
   </label>
 </div><!-- /radio_group -->
+
+<div class="form-field mt-4">
+  <button class="btn btn-block">Оформить заказ</button>
+</div>
           </div><!-- #deliveryScreen -->
         </form>
       </div>
 
-      <div class="col-12 col-lg-5 offset-lg-1">
+      <div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2">
         <div class="basket_item-list">
   <div class="basket_item">
   <div class="basket_item-img">

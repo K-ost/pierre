@@ -127,6 +127,10 @@ h3 {
   display: none;
 }
 
+.mt-4 {
+  margin-top: 44px !important;
+}
+
 /* grid */
 .grid {
   display: grid;
@@ -2226,6 +2230,7 @@ input[type=radio]:checked + .radio_group-hidden {
 .checkout_list {
   border: 1px solid var(--color-border);
   padding: 48px;
+  margin: 0 0 32px;
 }
 .checkout_list h4 {
   font-family: var(--ff2);
@@ -2812,6 +2817,20 @@ x .feaures_info-img.order1 {
 }
 .steps_item.active .steps_item-number {
   border-color: var(--color-black);
+}
+
+.basket_screen {
+  margin: 0 0 48px;
+}
+.basket_screen:last-child {
+  margin: 0;
+}
+.basket_screen h2 {
+  font-size: 30px;
+  margin: 0 0 32px;
+}
+.basket_screen.hidden {
+  display: none;
 }
 
 @media screen and (max-width: 1200px) {
