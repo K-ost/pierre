@@ -224,7 +224,7 @@
   <div class="container-fluid">
 
     <div class="row">
-      <div class="col-12 col-lg-6 order-2 order-lg-1">
+      <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 order-2 order-lg-1">
         <div class="steps_row">
   <div class="steps_item steps_item-1 active">
     <div class="steps_item-number">1</div>
@@ -242,16 +242,9 @@
 
         <form action="#">
           <div class="basket_screen">
-            <div class="row">
-              <div class="col-12 col-lg-6 form-field">
-                <input type="text" class="form-control form-control-simple" placeholder="Фамилия">
-              </div>
-              <div class="col-12 col-lg-6 form-field">
-                <input type="text" class="form-control form-control-simple" placeholder="Имя">
-              </div>
-              <div class="col-12 col-lg-6 form-field">
-                <input type="text" class="form-control form-control-simple" placeholder="Отчество">
-              </div>
+            <h2>Личные данные</h2>
+            <div class="form-field">
+              <input type="text" class="form-control form-control-simple" placeholder="Фамилия Имя Отчество">
             </div>
             <div class="row">
               <div class="col-12 col-lg-6 form-field">
@@ -272,17 +265,45 @@
             <div class="form-field">
               <textarea class="form-control form-control-simple" placeholder="Комментарии к заказу"></textarea>
             </div>
-            <div class="form-field mt-4">
-              <button type="button" class="btn btn-block js-paymentScreen">Перейти к деталям об оплате</button>
-            </div>
           </div>
+
+          <div class="basket_screen hidden" id="deliveryScreen">
+            <h2>Доставка</h2>
+            <div class="radio_group">
+  <label>
+    <span class="radio_group-title">Нужна доставка</span>
+    
+    <input type="radio" class="form-radio" name="delivery">
+    
+    <div class="radio_group-hidden">
+      <div class="form-field">
+        <input type="text" class="form-control form-control-simple" placeholder="Адрес">
+      </div>
+    </div>
+
+    
+  </label>
+</div><!-- /radio_group -->
+
+<div class="radio_group">
+  <label>
+    <span class="radio_group-title">Заберу из шоурума</span>
+    <span class="radio_group-text">ул. Брянская, д. 5</span>
+    <input type="radio" class="form-radio" name="delivery">
+    
+    
+
+    
+  </label>
+</div><!-- /radio_group -->
+          </div><!-- #deliveryScreen -->
 
           <div class="basket_screen hidden" id="paymentScreen">
             <h2>Оплата</h2>
             <div class="radio_group">
   <label>
     <span class="radio_group-title">Оплатить сейчас</span>
-    <span class="radio_group-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga laborum nulla beatae veniam? Veritatis, rem quod error nostrum qui esse laudantium magnam quibusdam ex porro quisquam ipsum sit illo.</span>
+    <span class="radio_group-text">Банковские карты платежныхз систем Visa, MasterCard, МИР, UnionPay.<br> Быстрая оплата T-PAY, SberPay, СБП.</span>
     <input type="radio" class="form-radio" name="payment">
     
     
@@ -290,11 +311,11 @@
     <div class="radio_group-hidden">
       <p><b>Паспортные данные</b></p>
       <div class="row">
-        <div class="col-12 col-lg-6 form-field">
-          <input type="text" class="form-control form-control-simple" placeholder="Серия">
+        <div class="col-12 col-lg-4 form-field">
+          <input type="text" class="form-control form-control-simple" placeholder="Серия / Номер">
         </div>
-        <div class="col-12 col-lg-6 form-field">
-          <input type="text" class="form-control form-control-simple" placeholder="Номер">
+        <div class="col-12 col-lg-8 form-field">
+          <input type="text" class="form-control form-control-simple" placeholder="Кем и когда выдан">
         </div>
       </div>
     </div>
@@ -303,8 +324,8 @@
 
 <div class="radio_group">
   <label>
-    <span class="radio_group-title">Оплатить по счету</span>
-    <span class="radio_group-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga laborum nulla beatae veniam? Veritatis, rem quod error nostrum qui esse laudantium magnam quibusdam ex porro quisquam ipsum sit illo.</span>
+    <span class="radio_group-title">С вами свяжется экеперт</span>
+    <span class="radio_group-text">Отдела сервиса и уточнит реквизиты для выставления ечета.<br> Оплатить можно как физическое лицо или юридическое лицо.</span>
     <input type="radio" class="form-radio" name="payment">
     
     
@@ -316,7 +337,7 @@
 <div class="radio_group">
   <label>
     <span class="radio_group-title">Рассрочка или кредит до 500 000 руб.</span>
-    <span class="radio_group-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga laborum nulla beatae veniam? Veritatis, rem quod error nostrum qui esse laudantium magnam quibusdam ex porro quisquam ipsum sit illo.</span>
+    <span class="radio_group-text">(банки-партнеры: Т-Банк, МТС, ОТП, Ренесане Кредит, Kviku и Совкомбанк)<br> Если вы не подходите под условия одного из этих банков, сервис подбирает другой — это увеличивает процент одобрения.<br> Выбор условий на следующем этане.</span>
     <input type="radio" class="form-radio" name="payment">
     
     
@@ -328,7 +349,7 @@
 <div class="radio_group">
   <label>
     <span class="radio_group-title">Оплата частями Яндекс.Сплит</span>
-    <span class="radio_group-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga laborum nulla beatae veniam? Veritatis, rem quod error nostrum qui esse laudantium magnam quibusdam ex porro quisquam ipsum sit illo.</span>
+    <span class="radio_group-text"><p>- при оплате в Силит<br> - до 150 000 рублей;<br> - при оплате в супер Силит — до 1 000 000 рублей.</p> Максимальная сумма покупки в Силит и супер Силит ограничена индивидуальным лимитом покупателя. Для Сплита в некоторых покупках сумму, которая превышает лимит, можно включить в первый платеж.</span>
     <input type="radio" class="form-radio" name="payment">
     
     
@@ -340,51 +361,8 @@
 <div class="radio_group">
   <label>
     <span class="radio_group-title">Оплатить позже, нужна консультация</span>
-    <span class="radio_group-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates fuga laborum nulla beatae veniam? Veritatis, rem quod error nostrum qui esse laudantium magnam quibusdam ex porro quisquam ipsum sit illo.</span>
+    <span class="radio_group-text">С вами свяжется экенерт Отдела сервиса и ответит на все ваши вопросы.</span>
     <input type="radio" class="form-radio" name="payment">
-    
-    
-
-    
-  </label>
-</div><!-- /radio_group -->
-
-<div class="form-field mt-4">
-  <button type="button" class="btn btn-block js-deliveryScreen">Перейти к деталям о доставке</button>
-</div>
-          </div><!-- #paymentScreen -->
-          
-          <div class="basket_screen hidden" id="deliveryScreen">
-            <h2>Доставка</h2>
-            <div class="radio_group">
-  <label>
-    <span class="radio_group-title">Нужна доставка</span>
-    
-    <input type="radio" class="form-radio" name="delivery">
-    
-    <div class="radio_group-hidden">
-      <div class="row">
-        <div class="col-12 col-lg-4 form-field">
-          <input type="text" class="form-control form-control-simple" placeholder="Город">
-        </div>
-        <div class="col-12 col-lg-4 form-field">
-          <input type="text" class="form-control form-control-simple" placeholder="Улица">
-        </div>
-        <div class="col-12 col-lg-4 form-field">
-          <input type="text" class="form-control form-control-simple" placeholder="Дом, квартира">
-        </div>
-      </div>
-    </div>
-
-    
-  </label>
-</div><!-- /radio_group -->
-
-<div class="radio_group">
-  <label>
-    <span class="radio_group-title">Заберу сам из шоурума</span>
-    <span class="radio_group-text">ул. Брянская, д. 5</span>
-    <input type="radio" class="form-radio" name="delivery">
     
     
 
@@ -395,11 +373,11 @@
 <div class="form-field mt-4">
   <button class="btn btn-block">Оформить заказ</button>
 </div>
-          </div><!-- #deliveryScreen -->
+          </div><!-- #paymentScreen -->
         </form>
       </div>
 
-      <div class="col-12 col-lg-5 offset-lg-1 order-1 order-lg-2">
+      <div class="col-12 col-lg-6 col-xl-5 offset-xl-1 order-1 order-lg-2">
         <div class="basket_item-list">
   <div class="basket_item">
   <div class="basket_item-img">
@@ -434,6 +412,26 @@
     <li><a class="dropdown-item select_dropdown-option" href="#">4</a></li>
     
     <li><a class="dropdown-item select_dropdown-option" href="#">5</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">6</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">7</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">8</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">9</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">10</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">11</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">12</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">13</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">14</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">15</a></li>
     
   </ul>
 </div><!-- /select_dropdown -->
@@ -478,6 +476,26 @@
     <li><a class="dropdown-item select_dropdown-option" href="#">4</a></li>
     
     <li><a class="dropdown-item select_dropdown-option" href="#">5</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">6</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">7</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">8</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">9</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">10</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">11</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">12</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">13</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">14</a></li>
+    
+    <li><a class="dropdown-item select_dropdown-option" href="#">15</a></li>
     
   </ul>
 </div><!-- /select_dropdown -->
@@ -519,7 +537,8 @@
   </div><!-- /checkout_box-bottom -->
 </div><!-- /checkout_box -->
 
-<div class="checkout_list" id="checkoutList">
+<div class="d-none d-lg-block">
+  <div class="checkout_list" id="checkoutList">
   <h4>Опыт Pierre</h4>
 
   <div class="accordion">
@@ -577,8 +596,70 @@
     </div>
   </div><!-- /accordion -->
 </div><!-- /checkout_list -->
+</div>
       </div>
     </div><!-- /grid -->
+
+    <div class="d-block d-lg-none">
+      <div class="checkout_list" id="checkoutList">
+  <h4>Опыт Pierre</h4>
+
+  <div class="accordion">
+    <a href="#checkoutNav1" class="spoiler-title collapsed" data-bs-toggle="collapse">Контакты</a>
+    <div id="checkoutNav1" class="accordion-collapse collapse" data-bs-parent="#checkoutList">
+      <div class="accordion-body">
+        <p>Если вам нужна помощь с вашим заказом или вы хотите получить дополнительную информацию, пожалуйста, свяжитесь с нашим Центром обслуживания клиентов.</p>
+        <p>Представители нашей службы поддержки клиентов доступны с понедельника по пятницу с 9:00 до 18:00. Он закрыт по выходным и праздничным дням.</p>
+        <p>Телефон: +74993941689</p>
+        <p>E-Mail: sales@pierrejewellery.ru</p>
+      </div>
+    </div>
+  </div><!-- /accordion -->
+
+  <div class="accordion">
+    <a href="#checkoutNav2" class="spoiler-title collapsed" data-bs-toggle="collapse">Доставка и возврат</a>
+    <div id="checkoutNav2" class="accordion-collapse collapse" data-bs-parent="#checkoutList">
+      <div class="accordion-body">
+        <p>Доставка</p>
+        <p>Tiffany & Co. предлагает бесплатную доставку всех заказов. Пожалуйста, подождите 3 рабочих дня для отправки заказанных вами товаров.</p>
+        <p>Доставка на следующий день</p>
+        <p>Мы можем доставить ваш заказ на следующий день за 18 евро за адрес. Доставка на следующий день бесплатна для заказов на сумму более 500 евро. Заказы, размещенные до 13:00 с понедельника по пятницу, будут доставлены на следующий рабочий день, кроме праздничных дней.</p>
+        <p>Обратите внимание, что некоторые регионы могут быть неподходящими для этой услуги. Мы просим вас проверить соответствие вашего адреса во время оформления заказа, чтобы убедиться, что варианты доставки доступны для вашего региона.</p>
+        <p>Возврат</p>
+        <p>Возврат и обмен возможен бесплатно. Возврат средств возможен в течение 30 дней с момента доставки. Чтобы вернуть заказ, посетите раздел «Возврат», чтобы распечатать необходимую транспортную этикетку и запланировать получение или доставку посылки в ближайшее отделение UPS.</p>
+      </div>
+    </div>
+  </div><!-- /accordion -->
+
+  <div class="accordion">
+    <a href="#checkoutNav3" class="spoiler-title collapsed" data-bs-toggle="collapse">Способы оплаты и безопасные транзакции</a>
+    <div id="checkoutNav3" class="accordion-collapse collapse" data-bs-parent="#checkoutList">
+      <div class="accordion-body">
+        <p>Tiffany & Co. принимает следующие способы оплаты:</p>
+        <ul>
+          <li>PayPal</li>
+          <li>Apple Pay</li>
+          <li>Visa</li>
+          <li>American Express</li>
+          <li>Mastercard</li>
+          <li>Maestro</li>
+        </ul>
+        <p>Чтобы обеспечить безопасность ваших данных, мы используем безопасные технологии шифрования при передаче и получении данных.</p>
+      </div>
+    </div>
+  </div><!-- /accordion -->
+
+  <div class="accordion">
+    <a href="#checkoutNav4" class="spoiler-title collapsed" data-bs-toggle="collapse">Уход за изделием и ремонт</a>
+    <div id="checkoutNav4" class="accordion-collapse collapse" data-bs-parent="#checkoutList">
+      <div class="accordion-body">
+        <p>Мы знаем, как много для вас значат ваши любимые изделия Tiffany. Именно поэтому мы предлагаем комплекс услуг, чтобы ваши украшения оставались такими же красивыми, как в первый день. Сюда входит чистка, полировка, замена посадки и многое другое.</p>
+        <p>Если вы хотите узнать больше о наших услугах по уходу и ремонту, свяжитесь с нашей службой поддержки клиентов по телефону 0800 200 7669.</p>
+      </div>
+    </div>
+  </div><!-- /accordion -->
+</div><!-- /checkout_list -->
+    </div>
     
   </div><!-- /container -->
 </section><!-- /middle_section -->

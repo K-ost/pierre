@@ -954,6 +954,8 @@ textarea.form-control {
   border-color: var(--color-border);
   border-radius: 0;
   padding: 0;
+  max-height: 224px;
+  overflow: auto;
 }
 .select_dropdown-option {
   padding: 22px 34px;
@@ -2834,9 +2836,6 @@ x .feaures_info-img.order1 {
 .basket_screen h2 {
   font-size: 30px;
   margin: 0 0 32px;
-}
-.basket_screen.hidden {
-  display: none;
 }
 
 @media screen and (max-width: 1200px) {
