@@ -2848,6 +2848,37 @@ x .feaures_info-img.order1 {
   color: var(--color-primary-hover);
 }
 
+/* faq_page */
+.faq_page h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin: 32px 0 24px;
+}
+.faq_page h2:first-child {
+  margin-top: 0;
+}
+.faq_page p {
+  margin: 0 0 14px;
+}
+.faq_page-left a {
+  color: var(--color-primary);
+}
+.faq_page-left a:hover {
+  color: var(--color-primary-hover);
+}
+.faq_page-right {
+  position: sticky;
+  top: 170px;
+}
+.faq_page-menu {
+  margin: 0 0 24px;
+  padding: 0;
+}
+.faq_page-menu li {
+  list-style: none;
+  margin: 0 0 2px;
+}
+
 @media screen and (max-width: 1200px) {
   :root {
     --mb2: 40px;
