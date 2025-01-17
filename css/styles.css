@@ -3237,6 +3237,24 @@ x .feaures_info-img.order1 {
   .module {
     padding: 20px;
   }
+
+  /* Basket */
+  body.cart-page .fixed_socials {
+    display: none;
+  }
+
+  .fixed_checkout_btn {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    margin: 0;
+    padding: 4px;
+    width: 100%;
+  }
+  .fixed_checkout_btn .btn {
+    padding: 16px;
+  }
 }
 @media screen and (max-width: 750px) {
   h1 {
