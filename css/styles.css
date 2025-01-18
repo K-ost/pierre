@@ -2880,13 +2880,18 @@ x .feaures_info-img.order1 {
 }
 
 /* article */
-.article h2 {
+.article h2, .article h3 {
   margin: 32px 0 24px;
   font-size: 28px;
   line-height: 32px;
+  font-weight: 600;
 }
-.article h2:first-child {
+.article h2:first-child, .article h3:first-child {
   margin-top: 0;
+}
+.article h3 {
+  font-size: 22px;
+  line-height: 26px;
 }
 .article p, .article ul, .article ol {
   margin: 0 0 24px;
