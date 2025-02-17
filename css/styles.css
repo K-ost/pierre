@@ -1193,7 +1193,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
     box-shadow: 0 34px 40px var(--color-border);
     position: absolute;
     left: 0;
-    margin-top: 15px;
+    margin-top: 12px;
     width: 100%;
     padding: 60px 0;
     transition: all 200ms ease-in-out;
