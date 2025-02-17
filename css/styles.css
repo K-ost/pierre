@@ -24,8 +24,8 @@
 body {
   color: var(--color-black);
   font-family: var(--ff);
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 14px;
+  line-height: 20px;
   margin: 0;
 }
 
@@ -52,8 +52,8 @@ a {
 }
 
 .container-fluid {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
   max-width: 1800px;
 }
 
@@ -73,8 +73,8 @@ a {
 h1, .pagetitle {
   font-family: var(--ff2);
   font-weight: 400;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 36px;
 }
 
 h2 {
@@ -220,7 +220,7 @@ hr {
 
 /* icons */
 .icon {
-  --size: 22px;
+  --size: 20px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1121,7 +1121,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   transform: translateY(-200px);
 }
 .header.sticky.shown {
-  transform: translateY(-110px);
+  transform: translateY(-90px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
 .header-top {
@@ -1144,7 +1144,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 .header-logo img {
   display: block;
   max-height: 90px;
-  margin: 0 auto -15px;
+  margin: 0 auto -10px;
 }
 .header-icons {
   align-items: center;
@@ -1152,7 +1152,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   margin-top: 16px;
 }
 .header.shown .header-icons {
-  margin: 0 0 16px;
+  margin: 0 0 15px;
 }
 
 /* navmenu */
@@ -1169,7 +1169,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 16px;
-  padding: 14px 20px;
+  padding: 15px 20px;
 }
 .navmenu > ul > li > a {
   color: var(--color-black);
@@ -1301,7 +1301,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   text-align: center;
 }
 .footer_item-title {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
   letter-spacing: 0.08em;
   line-height: 16px;
@@ -1341,8 +1341,8 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   padding: 0;
 }
 .footer-menu li {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 18px;
   list-style: none;
   margin: 0 0 16px;
 }
@@ -1371,11 +1371,11 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   margin: 0 0 20px;
 }
 .footer .fs5 {
-  font-size: 22px;
+  font-size: 20px;
   line-height: 26px;
 }
 .footer .fs3 {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
 }
 .footer .fs1 {
@@ -1898,6 +1898,9 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   width: 100%;
   margin: 0 0 10px;
 }
+.filterbox-title h1 {
+  font-size: 26px;
+}
 .filterbox-matches {
   font-size: 12px;
   text-transform: uppercase;
@@ -1947,7 +1950,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 }
 
 .goodbox-img {
-  background: var(--color-light);
+  background: #fafafa;
   position: relative;
   margin: 0 0 20px;
 }
@@ -2040,12 +2043,12 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 }
 .catalog_description h2 {
   font-family: var(--ff2);
-  font-size: 32px;
-  line-height: 36px;
-  margin: 0 0 16px;
+  font-size: 26px;
+  line-height: 30px;
+  margin: 0 0 10px;
 }
 .catalog_description-small {
-  font-size: 14px;
+  font-size: 12px;
 }
 .catalog_description-nav {
   display: flex;
