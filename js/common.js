@@ -18,10 +18,10 @@ function carouselCreator(id, num = 4, space = 24) {
     },
   });
 }
-const reviewsSlider = carouselCreator("#reviews-slider", 5);
-const alsolikeSlider = carouselCreator("#alsolike-slider", 4);
-const reviewsCatalogSlider = carouselCreator("#reviews_catalog", 4);
-const productVideos = carouselCreator("#productVideos", 4);
+const reviewsSlider = carouselCreator("#reviews-slider", 6);
+const alsolikeSlider = carouselCreator("#alsolike-slider", 5);
+const reviewsCatalogSlider = carouselCreator("#reviews_catalog", 5);
+const productVideos = carouselCreator("#productVideos", 5);
 
 // iconsSlider
 const iconsSlider = new Swiper("#icons_slider", {

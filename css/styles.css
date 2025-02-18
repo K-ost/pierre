@@ -177,8 +177,8 @@ hr {
   padding: 4px 0;
   text-decoration: none;
   letter-spacing: 1px;
-  font-size: 12px;
-  line-height: 16px;
+  font-size: 11px;
+  line-height: 14px;
 }
 
 /* animated_link */
@@ -1405,7 +1405,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 .product-grid {
   grid-template-columns: 1.3333333fr 0.66666fr;
   gap: 0px var(--grid);
-  margin-top: 10px;
+  margin-top: 30px;
   margin-bottom: var(--mb2);
 }
 
@@ -1737,6 +1737,9 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 .faq_item {
   border-bottom: 1px solid rgba(242, 242, 242, 0.9);
 }
+.faq_item:hover {
+  border-bottom: 1px solid black;
+}
 .faq_item-title {
   padding: 24px 60px 24px 0;
   position: relative;
@@ -1979,8 +1982,8 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 .goodbox-title {
   margin: 0 0 12px;
   text-align: center;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 16px;
+  line-height: 24px;
   font-family: var(--ff2);
 }
 .goodbox-text {
@@ -1998,7 +2001,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   border-bottom-color: var(--color-black);
 }
 .goodbox-price {
-  font-size: 14px;
+  font-size: 12px;
   text-align: center;
 }
 .goodbox-details {
@@ -2049,6 +2052,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 }
 .catalog_description-small {
   font-size: 12px;
+  line-height: 18px;
 }
 .catalog_description-nav {
   display: flex;
@@ -2405,7 +2409,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 }
 .category_description-text {
   color: var(--color-text);
-  font-size: 14px;
+  font-size: 12px;
 }
 
 /* reviewbox */
