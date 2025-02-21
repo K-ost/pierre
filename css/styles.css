@@ -733,6 +733,7 @@ textarea.form-control {
   display: block;
   margin: 0 0 12px;
   width: 100%;
+  height: 160px;
   object-fit: cover;
   transition: all 300ms ease-in-out;
 }
@@ -760,7 +761,7 @@ textarea.form-control {
   width: 100%;
 }
 .swipe_good-title {
-  font-size: 16px;
+  font-size: 14px;
   font-family: var(--ff2);
   line-height: 20px;
   margin: 0 0 8px;
@@ -1411,6 +1412,16 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 
 .product-main {
   order: 1;
+}
+.product-main .product_image {
+  background: #fafafa;
+  margin-bottom: var(--mb);
+}
+.product-main .product_image:last-child:not(.product_image-first) {
+  margin: 0;
+}
+.product-main img {
+  mix-blend-mode: multiply;
 }
 
 .product-details {
@@ -2435,7 +2446,12 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   margin: 0 0 16px;
 }
 .reviewbox-text {
-  margin: 0 0 16px;
+  margin: 0 0 8px;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  text-overflow: ellipsis;
 }
 .reviewbox-text a {
   color: var(--color-grey);
@@ -2483,10 +2499,12 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 .product_video-title {
   font-weight: 700;
   margin: 0 0 6px;
-  font-size: 16px;
+  font-size: 14px;
+  font-family: var(--ff2);
 }
 .product_video-text {
   color: var(--color-grey);
+  font-size: 12px;
 }
 
 /* checkout_page */
@@ -2936,6 +2954,28 @@ x .feaures_info-img.order1 {
 }
 .article_gallery-item:hover {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.45);
+}
+
+/* home_categories */
+.home_categories {
+  margin: 0 0 var(--mb2);
+}
+.home_categories .swiper-slide {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+}
+.home_categories .swiper-slide a {
+  display: block;
+  text-decoration: none;
+}
+.home_categories .swiper-slide img {
+  aspect-ratio: 1/1;
+  display: block;
+  margin: 0 0 16px;
 }
 
 /* image_text */
@@ -3594,5 +3634,17 @@ x .feaures_info-img.order1 {
   /* review_card */
   .review_card {
     padding: 16px;
+  }
+
+  /* home_categories */
+  .home_categories .container {
+    padding: 0;
+    margin: 0;
+  }
+  .home_categories .swiper {
+    overflow: visible;
+  }
+  .home_categories .swiper-slide {
+    width: 211px;
   }
 }

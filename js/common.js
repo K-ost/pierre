@@ -44,6 +44,15 @@ const filterboxSubcats = new Swiper(".filterbox-subcats .swiper", {
   },
 });
 
+// homeCategoriesSlider
+const homeCategoriesSlider = new Swiper("#home_categories-slider", {
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  breakpoints: {
+    750: { slidesPerView: 5, spaceBetween: 24 },
+  },
+});
+
 // reviewGallery
 const reviewGallery = new Swiper("#reviewGallery .swiper", {
   slidesPerView: 1,
