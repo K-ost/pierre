@@ -1189,7 +1189,8 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   text-decoration: none;
 }
 .navmenu > ul > li ul li {
-  font-size: 14px;
+  font-size: 13px;
+  line-height: 16px;
 }
 
 /* dropdown_nav */
@@ -1253,15 +1254,16 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   }
   .dropdown_nav ul li a {
     text-decoration: none;
+    border-bottom: 1px dotted transparent;
   }
   .dropdown_nav ul li a:hover {
-    text-decoration: underline;
+    border-bottom-color: var(--color-black);
   }
 }
 /* dropdown_nav-title / dropdown_nav-images */
 .dropdown_nav-title {
   color: var(--color-grey);
-  font-size: 16px;
+  font-size: 14px;
   text-transform: none;
 }
 
@@ -1449,7 +1451,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 /* product-details */
 .product-details h1 {
   color: rgba(0, 0, 0, 0.85);
-  font-size: 28px;
+  font-size: 26px;
   line-height: 30px;
 }
 
