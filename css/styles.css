@@ -199,6 +199,9 @@ hr {
   position: absolute;
   height: 1px;
 }
+.animated_link.black::after, .animated_link.black::before {
+  background-color: var(--color-black);
+}
 .animated_link::before {
   right: 0;
   transition: width 0.6s cubic-bezier(0.4, 0, 0.2, 1);
@@ -733,7 +736,7 @@ textarea.form-control {
   display: block;
   margin: 0 0 12px;
   width: 100%;
-  height: 176px;
+  height: 186px;
   object-fit: cover;
   transition: all 300ms ease-in-out;
 }
@@ -1009,11 +1012,19 @@ textarea.form-control {
   max-width: 25%;
   width: 100%;
   letter-spacing: 1px;
+  display: block;
+  text-decoration: none;
+}
+.advantages-item span {
+  border-bottom: 1px dotted transparent;
 }
 .advantages-item img {
   display: block;
   margin: 0 auto 8px;
   height: 28px;
+}
+.advantages-item:hover span {
+  border-color: var(--color-black);
 }
 
 /* table */
@@ -1415,7 +1426,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 }
 .product-main .product_image:not(.product_image-first) {
   background: #fafafa;
-  margin-bottom: var(--mb);
+  margin-bottom: 20px;
 }
 .product-main .product_image:not(.product_image-first):last-child:not(.product_image-first) {
   margin: 0;
@@ -1438,8 +1449,8 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 /* product-details */
 .product-details h1 {
   color: rgba(0, 0, 0, 0.85);
-  font-size: 30px;
-  line-height: 32px;
+  font-size: 28px;
+  line-height: 30px;
 }
 
 /* product-price */
@@ -3029,8 +3040,8 @@ x .feaures_info-img.order1 {
   margin: 0 20px 20px;
 }
 .triple_item-text {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 20px;
   margin: 0 20px 20px;
 }
 
