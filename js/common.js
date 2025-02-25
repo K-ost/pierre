@@ -274,3 +274,17 @@ if (header && document.documentElement.clientWidth > 1000) {
     lastTop = dirPoint;
   });
 }
+
+// Menu riding effect
+if (document.documentElement.clientWidth > 1200) {
+  const menu = document.querySelector(".navmenu>ul");
+  menu.addEventListener("mouseover", (e) => {
+    if (e.target.classList.contains("navmenu__link")) {
+      menu.style.setProperty("--underline-width", `${e.target.offsetWidth}px`);
+      menu.style.setProperty("--underline-offset-x", `${e.target.offsetLeft}px`);
+    }
+  });
+  menu.addEventListener("mouseleave", () =>
+    menu.style.setProperty("--underline-width", "0")
+  );
+}
