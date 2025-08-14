@@ -221,17 +221,27 @@
 <div class="container-fluid">
 
   <div class="md-visible">
-    <div class="product_image product_image-first">
-  <picture>
-    <a href="images/uploads/image2.webp" data-fancybox="Gallery"><img src="images/uploads/image2.webp" alt=""></a>
-  </picture>
-  
-</div><!-- /product_image -->
+    <div class="mobile-slider" id="mobileSlider">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="images/uploads/image2.webp" data-fancybox="Gallery"><img src="images/uploads/image2.webp" alt=""></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="images/uploads/product4.webp" data-fancybox="Gallery"><img src="images/uploads/product4.webp" alt=""></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="images/uploads/product5.webp" data-fancybox="Gallery"><img src="images/uploads/product5.webp" alt=""></a>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div><!-- /mobile-slider.html -->
   </div><!-- /md-visible -->
   
 	<div class="grid product-grid">
-    <div class="product-main">
-      <div class="md-hidden">
+    <div class="product-main md-hidden">
+      <div class="">
         <div class="product_image product_image-first">
   <picture>
     <a href="images/uploads/image2.webp" data-fancybox="Gallery"><img src="images/uploads/image2.webp" alt=""></a>
@@ -318,7 +328,8 @@
 
     <div class="product-details">
       <div class="stickyBox">
-        <h1>Кольцо с бриллиантом Принцесса классика</h1>
+        <h1 class="md-hidden">Кольцо с бриллиантом Принцесса классика</h1>
+        
         <div class="product-style">
           <span>Стиль #74183</span>
         </div>
@@ -466,13 +477,16 @@
         </div>
       
         <div class="product-buttons">
-          <a href="#book-popup" class="btn btn-block btn-secondary" data-bs-toggle="offcanvas">Забронировать</a>
+          <div>
+            <a href="#book-popup" class="btn btn-block btn-secondary" data-bs-toggle="offcanvas">Забронировать</a>
+          </div>
           <div>
             <a href="#cart-notification" class="btn btn-block btn-black" data-bs-toggle="offcanvas">В корзину</a>
           </div>
         </div><!-- /product-buttons -->
-      
-        <div class="advantages">
+
+        <div class="md-hidden">
+          <div class="advantages">
   <a href="#" class="advantages-item" data-bs-toggle="offcanvas" data-bs-target="#advantages-1">
     <img src="images/svg/diamond.svg" alt="">
     <span>Только натуральные камни</span>
@@ -491,6 +505,7 @@
   </a>
 </div><!-- /advantages -->
 
+        </div>
       </div><!-- /stickyBox -->
     </div><!-- /product-details -->
   </div><!-- /product-grid -->
@@ -614,8 +629,9 @@
   </div><!-- /swiper -->
 </div><!-- /carousel -->
 
-  <div class="pagetitle">Рекомендуемые подборки</div>
-  <div class="recommendbox">
+  <div class="md-hidden">
+    <div class="pagetitle">Рекомендуемые подборки</div>
+    <div class="recommendbox">
   <div class="recommendbox-inner">
     <div class="recommendbox-list">
       <a href="#" class="border_link">Кольца дорожки с изумрудами</a>
@@ -641,6 +657,29 @@
     <a href="#" class="border_link js-recommend">&darr; Показать еще &darr;</a>
   </div>
 </div><!-- /recommendbox -->
+  </div>
+
+  <div class="md-visible md-mb-4">
+    <div class="advantages">
+  <a href="#" class="advantages-item" data-bs-toggle="offcanvas" data-bs-target="#advantages-1">
+    <img src="images/svg/diamond.svg" alt="">
+    <span>Только натуральные камни</span>
+  </a>
+  <a href="#" class="advantages-item" data-bs-toggle="offcanvas" data-bs-target="#advantages-2">
+    <img src="images/svg/ring.svg" alt="">
+    <span>Скорректируем размер</span>
+  </a>
+  <a href="#" class="advantages-item" data-bs-toggle="offcanvas" data-bs-target="#advantages-3">
+    <img src="images/svg/certificate.svg" alt="">
+    <span>Сертификат на все бриллианты</span>
+  </a>
+  <a href="#" class="advantages-item" data-bs-toggle="offcanvas" data-bs-target="#advantages-4">
+    <img src="images/svg/wallet.svg" alt="">
+    <span>Оплата любым удобным способом</span>
+  </a>
+</div><!-- /advantages -->
+
+  </div>
 </div><!-- /container-fluid -->
 
 

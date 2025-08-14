@@ -288,3 +288,12 @@ if (document.documentElement.clientWidth > 1200) {
     menu.style.setProperty("--underline-width", "0")
   );
 }
+
+// mobileSlider
+const mobileSlider = new Swiper("#mobileSlider .swiper", {
+  slidesPerView: 1,
+  spaceBetween: 10,
+  pagination: {
+    el: `#mobileSlider .swiper-pagination`,
+  },
+});
