@@ -3366,6 +3366,7 @@ x .feaures_info-img.order1 {
     order: 1;
     font-size: 19px;
     line-height: 22px;
+    margin-bottom: 24px;
   }
   .stickyBox .product-delivery {
     order: 5;
