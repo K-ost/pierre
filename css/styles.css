@@ -3364,9 +3364,11 @@ x .feaures_info-img.order1 {
   }
   .stickyBox .product-price {
     order: 1;
+    font-size: 19px;
+    line-height: 22px;
   }
   .stickyBox .product-delivery {
-    order: 4;
+    order: 5;
     margin-bottom: 0;
   }
   .stickyBox .selecting_metal {
@@ -3383,7 +3385,7 @@ x .feaures_info-img.order1 {
     line-height: 20px;
   }
   .stickyBox .product-style {
-    order: 2;
+    order: 4;
   }
   .stickyBox .advantages {
     order: 7;
