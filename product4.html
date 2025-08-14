@@ -221,17 +221,27 @@
 <div class="container-fluid">
 
   <div class="md-visible">
-    <div class="product_image product_image-first">
-  <picture>
-    <a href="https://media.tiffany.com/is/image/tco/60145720_RG_MAIN1X1?hei=1256&wid=1256&fmt=webp&op_usm=1,2,6" data-fancybox="Gallery"><img src="https://media.tiffany.com/is/image/tco/60145720_RG_MAIN1X1?hei=1256&wid=1256&fmt=webp&op_usm=1,2,6" alt=""></a>
-  </picture>
-  
-</div><!-- /product_image -->
+    <div class="mobile-slider" id="mobileSlider">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <a href="https://media.tiffany.com/is/image/tco/60145720_RG_MAIN1X1?hei=1256&wid=1256&fmt=webp&op_usm=1,2,6" data-fancybox="Gallery-mobile"><img src="https://media.tiffany.com/is/image/tco/60145720_RG_MAIN1X1?hei=1256&wid=1256&fmt=webp&op_usm=1,2,6" alt=""></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="images/uploads/product4.webp" data-fancybox="Gallery-mobile"><img src="images/uploads/product4.webp" alt=""></a>
+      </div>
+      <div class="swiper-slide">
+        <a href="images/uploads/product5.webp" data-fancybox="Gallery-mobile"><img src="images/uploads/product5.webp" alt=""></a>
+      </div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</div><!-- /mobile-slider.html -->
   </div><!-- /md-visible -->
   
 	<div class="grid product-grid">
-    <div class="product-main">
-      <div class="md-hidden">
+    <div class="product-main md-hidden">
+      <div>
         <div class="product_image product_image-first">
   <picture>
     <a href="https://media.tiffany.com/is/image/tco/60145720_RG_MAIN1X1?hei=1256&wid=1256&fmt=webp&op_usm=1,2,6" data-fancybox="Gallery"><img src="https://media.tiffany.com/is/image/tco/60145720_RG_MAIN1X1?hei=1256&wid=1256&fmt=webp&op_usm=1,2,6" alt=""></a>
@@ -254,7 +264,8 @@
 
     <div class="product-details">
       <div class="stickyBox">
-        <h1>Коктейльное</h1>
+        <h1 class="md-hidden">Коктейльное</h1>
+
         <div class="product-style">
           <span>Стиль #74183</span>
         </div>
@@ -340,8 +351,9 @@
           <a href="#book-popup" class="btn btn-block btn-secondary" data-bs-toggle="offcanvas">Забронировать</a>
           <a href="#" class="btn btn-block btn-black">В корзину</a>
         </div><!-- /product-buttons -->
-      
-        <div class="advantages">
+        
+        <div class="md-hidden">
+          <div class="advantages">
   <a href="#" class="advantages-item" data-bs-toggle="offcanvas" data-bs-target="#advantages-1">
     <img src="images/svg/diamond.svg" alt="">
     <span>Только натуральные камни</span>
@@ -360,13 +372,15 @@
   </a>
 </div><!-- /advantages -->
 
+        </div>
       </div><!-- /stickyBox -->
     </div><!-- /product-details -->
   </div><!-- /product-grid -->
 
 </div><!-- /container -->
 
-<div class="container-fluid faq-grid">
+<div class="md-hidden">
+  <div class="container-fluid faq-grid">
   <!-- <div class="grid grid-2 grid-md-1 faq-grid"> -->
   <div class="row">
     <div class="col-12 col-lg-5 offset-lg-1 d-none d-lg-block py-0">
@@ -426,6 +440,7 @@
     </div>
   </div>
 </div><!-- /container -->
+</div>
 
 <div class="container-fluid">
   <div class="carousel carousel-goods">
@@ -576,8 +591,10 @@
 </div>
   </div><!-- /swiper -->
 </div><!-- /carousel -->
-  <div class="pagetitle">Рекомендуемые подборки</div>
-  <div class="recommendbox">
+  
+  <div class="md-hidden">
+    <div class="pagetitle">Рекомендуемые подборки</div>
+    <div class="recommendbox">
   <div class="recommendbox-inner">
     <div class="recommendbox-list">
       <a href="#" class="border_link">Кольца дорожки с изумрудами</a>
@@ -603,6 +620,92 @@
     <a href="#" class="border_link js-recommend">&darr; Показать еще &darr;</a>
   </div>
 </div><!-- /recommendbox -->
+  </div>
+
+  <div class="md-visible">
+    <div class="container-fluid faq-grid">
+  <!-- <div class="grid grid-2 grid-md-1 faq-grid"> -->
+  <div class="row">
+    <div class="col-12 col-lg-5 offset-lg-1 d-none d-lg-block py-0">
+      <img src="images/gift.jpg" alt="">
+    </div>
+    <div class="col-12 col-lg-4 offset-lg-1 py-0">
+      <div id="faqAccordion">
+        <div class="faq_item accordion-item">
+  <div class="faq_item-title " data-bs-toggle="collapse" data-bs-target="#faq-1">Упаковка</div>
+  <div id="faq-1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      Все покупки Pierre & Co. поставляются в упаковке Pierre Blue Box®. Этот культовый дизайн существует с 1886 года. Однако сегодня все синие коробки и синие сумки изготавливаются из бумаги, полученной из экологически чистых источников и переработанных материалов.
+    </div>
+  </div>
+</div><!-- /faq_item -->
+        <div class="faq_item accordion-item">
+  <div class="faq_item-title collapsed" data-bs-toggle="collapse" data-bs-target="#faq-2">Лучшие цены</div>
+  <div id="faq-2" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      Все покупки Pierre & Co. поставляются в упаковке Pierre Blue Box®. Этот культовый дизайн существует с 1886 года. Однако сегодня все синие коробки и синие сумки изготавливаются из бумаги, полученной из экологически чистых источников и переработанных материалов.
+    </div>
+  </div>
+</div><!-- /faq_item -->
+        <div class="faq_item accordion-item">
+  <div class="faq_item-title collapsed" data-bs-toggle="collapse" data-bs-target="#faq-3">Студия колец PIERRE</div>
+  <div id="faq-3" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      Все покупки Pierre & Co. поставляются в упаковке Pierre Blue Box®. Этот культовый дизайн существует с 1886 года. Однако сегодня все синие коробки и синие сумки изготавливаются из бумаги, полученной из экологически чистых источников и переработанных материалов.
+    </div>
+  </div>
+</div><!-- /faq_item -->
+        <div class="faq_item accordion-item">
+  <div class="faq_item-title collapsed" data-bs-toggle="collapse" data-bs-target="#faq-4">Таблица размеров</div>
+  <div id="faq-4" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      Все покупки Pierre & Co. поставляются в упаковке Pierre Blue Box®. Этот культовый дизайн существует с 1886 года. Однако сегодня все синие коробки и синие сумки изготавливаются из бумаги, полученной из экологически чистых источников и переработанных материалов.
+    </div>
+  </div>
+</div><!-- /faq_item -->
+        <div class="faq_item accordion-item">
+  <div class="faq_item-title collapsed" data-bs-toggle="collapse" data-bs-target="#faq-5">Гравировка</div>
+  <div id="faq-5" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      Все покупки Pierre & Co. поставляются в упаковке Pierre Blue Box®. Этот культовый дизайн существует с 1886 года. Однако сегодня все синие коробки и синие сумки изготавливаются из бумаги, полученной из экологически чистых источников и переработанных материалов.
+    </div>
+  </div>
+</div><!-- /faq_item -->
+        <div class="faq_item accordion-item">
+  <div class="faq_item-title collapsed" data-bs-toggle="collapse" data-bs-target="#faq-6">Пожизненное сервисное обслуживание</div>
+  <div id="faq-6" class="accordion-collapse collapse " data-bs-parent="#faqAccordion">
+    <div class="accordion-body">
+      Все покупки Pierre & Co. поставляются в упаковке Pierre Blue Box®. Этот культовый дизайн существует с 1886 года. Однако сегодня все синие коробки и синие сумки изготавливаются из бумаги, полученной из экологически чистых источников и переработанных материалов.
+    </div>
+  </div>
+</div><!-- /faq_item -->
+      </div>
+    </div>
+  </div>
+</div><!-- /container -->
+  </div>
+
+  <div class="md-visible md-mb-4">
+    <div class="advantages">
+  <a href="#" class="advantages-item" data-bs-toggle="offcanvas" data-bs-target="#advantages-1">
+    <img src="images/svg/diamond.svg" alt="">
+    <span>Только натуральные камни</span>
+  </a>
+  <a href="#" class="advantages-item" data-bs-toggle="offcanvas" data-bs-target="#advantages-2">
+    <img src="images/svg/ring.svg" alt="">
+    <span>Скорректируем размер</span>
+  </a>
+  <a href="#" class="advantages-item" data-bs-toggle="offcanvas" data-bs-target="#advantages-3">
+    <img src="images/svg/certificate.svg" alt="">
+    <span>Сертификат на все бриллианты</span>
+  </a>
+  <a href="#" class="advantages-item" data-bs-toggle="offcanvas" data-bs-target="#advantages-4">
+    <img src="images/svg/wallet.svg" alt="">
+    <span>Оплата любым удобным способом</span>
+  </a>
+</div><!-- /advantages -->
+
+  </div>
 </div><!-- /container-fluid -->
 
 
