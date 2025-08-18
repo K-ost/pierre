@@ -3775,12 +3775,13 @@ x .feaures_info-img.order1 {
 }
 .mobile-slider .swiper-pagination-bullet {
   background: 0;
-  border: 1px solid var(--color-text);
+  border: 0;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.45);
   opacity: 1;
   margin: 0 3px !important;
-  width: 8px;
-  height: 8px;
+  width: 5px;
+  height: 5px;
 }
 .mobile-slider .swiper-pagination-bullet-active {
-  background: var(--color-text);
+  background: rgba(0, 0, 0, 0.45);
 }
