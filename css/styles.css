@@ -870,7 +870,7 @@ textarea.form-control {
 
 /* scrollText */
 .scrollText {
-  font-size: 14px;
+  font-size: 13px;
   line-height: 14px;
   position: absolute;
   bottom: 30px;
@@ -878,10 +878,11 @@ textarea.form-control {
   left: 0;
   height: 14px;
   overflow: hidden;
+  color: rgba(0, 0, 0, 0.6);
 }
 .scrollText-line {
   animation: scrollAnimationLine 4.9s cubic-bezier(0.45, 0, 0.55, 1) infinite;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
   height: 14px;
   left: 0;
   margin: auto;
@@ -3657,6 +3658,10 @@ x .feaures_info-img.order1 {
   /* goodbox */
   .goodbox-text {
     display: none;
+  }
+
+  .good_grid_third .goodbox-text {
+    display: block;
   }
 
   .goodbox-title {
