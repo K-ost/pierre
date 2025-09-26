@@ -3074,6 +3074,33 @@ x .feaures_info-img.order1 {
   margin: 0 20px 20px;
 }
 
+/* whatsup_fix_btn */
+.whatsup_fix_btn {
+  --size: 56px;
+  align-items: center;
+  background: #5A49FF;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+  border-radius: 50%;
+  color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  bottom: 40px;
+  left: 16px;
+  z-index: 1000;
+  position: fixed;
+  font-size: 24px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+  width: var(--size);
+  height: var(--size);
+}
+.whatsup_fix_btn:hover {
+  background: #7365f5;
+}
+.whatsup_fix_btn:active {
+  background: #4a37f9;
+}
+
 @media screen and (max-width: 1200px) {
   :root {
     --mb2: 40px;
