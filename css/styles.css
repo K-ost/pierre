@@ -2125,14 +2125,23 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
 
 /* home_banner */
 .home_banner {
+  position: relative;
+}
+.home_banner-img {
   background: url(../images/home-banner.webp) center/cover no-repeat;
   background-attachment: fixed;
-  position: relative;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+  top: 0;
 }
 .home_banner .container {
   height: calc(100vh - 174px);
   display: flex;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 .home_banner-title {
   font-family: var(--ff2);
@@ -3766,6 +3775,25 @@ x .feaures_info-img.order1 {
   }
   .home_categories .swiper-slide {
     width: 211px;
+  }
+
+  /* home_banner */
+  .home_banner-img {
+    background-attachment: inherit;
+    position: relative;
+    left: auto;
+    width: auto;
+    top: auto;
+    bottom: auto;
+    aspect-ratio: 1/1;
+  }
+  .home_banner .container {
+    height: auto;
+    text-align: center;
+    padding-top: 30px;
+  }
+  .home_banner .scrollText {
+    display: none;
   }
 }
 /* mobile-slider */
