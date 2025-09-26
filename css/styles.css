@@ -2059,6 +2059,16 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   text-decoration: underline;
 }
 
+/* goodbox-adv */
+.goodbox-adv {
+  display: none;
+  grid-column: span 2;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  padding: 24px 14px;
+}
+
 /* subcat */
 .subcat {
   text-align: center;
@@ -3311,21 +3321,24 @@ x .feaures_info-img.order1 {
     text-align: center;
   }
   .dropdown_nav-title {
+    color: var(--color-black);
     padding: 24px 16px 16px;
+    font-size: 14px;
   }
   .dropdown_nav-nav .grid {
     display: block;
   }
   .dropdown_nav-nav ul {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     margin: 0;
-    padding: 0;
+    padding: 0 0 0 30px;
   }
   .dropdown_nav-nav ul li {
     border: 0;
     list-style: none;
+    font-size: 14px !important;
   }
   .dropdown_nav-nav ul li a {
+    color: var(--color-text);
     display: block;
     padding: 16px;
   }
@@ -3710,6 +3723,10 @@ x .feaures_info-img.order1 {
 
   .goodbox-price {
     font-size: 13px;
+  }
+
+  .goodbox-adv {
+    display: block;
   }
 
   /* filterbox */
