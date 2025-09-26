@@ -3228,6 +3228,7 @@ x .feaures_info-img.order1 {
     position: fixed;
     left: 0;
     top: 54px;
+    padding-top: 10px;
     bottom: 0;
     width: 100%;
     max-width: 600px;
@@ -3243,11 +3244,13 @@ x .feaures_info-img.order1 {
     display: block;
   }
   .navmenu > ul > li {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     padding: 0;
+    text-transform: none;
+    font-size: 15px;
+    letter-spacing: normal;
   }
   .navmenu > ul > li > a {
-    padding: 24px 16px;
+    padding: 20px 16px;
     position: relative;
   }
   .navmenu > ul > li > a::after {
@@ -3302,7 +3305,6 @@ x .feaures_info-img.order1 {
     padding: 20px 16px;
   }
   .dropdown_nav-header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
     font-size: 16px;
     padding: 24px 16px;
     position: relative;
