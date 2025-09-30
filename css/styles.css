@@ -2158,6 +2158,7 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   font-size: 28px;
   line-height: 32px;
   margin: 0 0 16px;
+  text-transform: uppercase;
 }
 .home_banner-text {
   font-weight: 700;
@@ -3084,40 +3085,72 @@ x .feaures_info-img.order1 {
   margin: 0 20px 20px;
 }
 
-/* whatsup_fix_btn */
-.whatsup_fix_btn {
-  --size: 56px;
-  align-items: center;
-  background: #5A49FF;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
-  border-radius: 50%;
-  color: var(--color-white);
-  display: flex;
-  justify-content: center;
+/* fix_social */
+.fix_social {
+  --size: 50px;
   bottom: 40px;
-  left: 16px;
+  right: 16px;
   z-index: 1000;
   position: fixed;
-  font-size: 24px;
+}
+.fix_social-btn {
+  background-color: #5A49FF;
+  background-image: url(../images/svg/whatsup-tme.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+  border-radius: 50px;
+  border: 0;
+  margin: 0;
+  cursor: pointer;
+  display: block;
   text-decoration: none;
-  transition: all 200ms ease-in-out;
   width: var(--size);
   height: var(--size);
+  position: relative;
+  z-index: 10;
 }
-.whatsup_fix_btn:hover {
-  background: #7365f5;
+.fix_social-btn.active {
+  background-image: url(../images/svg/chevron-right.svg);
+  background-size: 24px;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 1px #5A49FF;
 }
-.whatsup_fix_btn:active {
-  background: #4a37f9;
+.fix_social-hidden {
+  background: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.45);
+  position: absolute;
+  height: var(--size);
+  top: 0;
+  display: flex;
+  right: calc(var(--size) / 2);
+  padding-right: 28px;
+  padding-left: 8px;
+  transform: scaleX(0);
+  transform-origin: 100% 0;
+  transition: all 200ms ease-in-out;
+}
+.fix_social-hidden.active {
+  transform: scaleX(1);
+}
+.fix_social-link {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 24px;
+  display: block;
+  height: var(--size);
+  width: var(--size);
+}
+.fix_social-whatsapp {
+  background-image: url(../images/svg/whatsapp-purple.svg);
+}
+.fix_social-tme {
+  background-image: url(../images/svg/telegram-purple.svg);
 }
 
 @media screen and (max-width: 1200px) {
   :root {
     --mb2: 40px;
-  }
-
-  body {
-    padding-bottom: 40px;
   }
 
   .md-order-1 {
@@ -3835,11 +3868,15 @@ x .feaures_info-img.order1 {
   }
   .home_banner .container {
     height: auto;
+    display: block;
     text-align: center;
     padding-top: 30px;
   }
   .home_banner .scrollText {
     display: none;
+  }
+  .home_banner-title {
+    text-transform: none;
   }
 }
 /* mobile-slider */

@@ -297,3 +297,11 @@ const mobileSlider = new Swiper("#mobileSlider .swiper", {
     el: `#mobileSlider .swiper-pagination`,
   },
 });
+
+// fix_social updated
+const fixSocialBtn = document.querySelector(".fix_social-btn");
+fixSocialBtn.addEventListener("click", (e) => {
+  const hidden = e.target.nextElementSibling;
+  e.target.classList.toggle("active");
+  hidden.classList.toggle("active");
+});
