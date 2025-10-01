@@ -2138,7 +2138,10 @@ input[type=radio]:checked + .radio_group-hidden, input[type=checkbox]:checked + 
   position: relative;
 }
 .home_banner-img {
-  background: url(../images/home-banner.webp) center/cover no-repeat;
+  background-image: url(../images/home-banner.webp);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
   position: absolute;
   left: 0;
