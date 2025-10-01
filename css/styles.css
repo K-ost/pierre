@@ -3151,6 +3151,70 @@ x .feaures_info-img.order1 {
   background-image: url(../images/svg/telegram-purple.svg);
 }
 
+/* bottom-banner */
+.bottom-banner {
+  position: relative;
+}
+.bottom-banner__img img {
+  display: block;
+}
+.bottom-banner__inner {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+}
+.bottom-banner-entry {
+  text-align: center;
+  width: 32%;
+  left: 13%;
+  position: relative;
+}
+.bottom-banner__text {
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.bottom-banner .pagetitle {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* history-banner */
+.history-banner {
+  display: flex;
+}
+.history-banner__img {
+  width: 70%;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+.history-banner__img video {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  max-width: inherit;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 7;
+}
+.history-banner__inner {
+  width: 30%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 0 50px;
+}
+.history-banner .pagetitle {
+  font-size: 28px;
+  font-weight: 700;
+}
+
 @media screen and (max-width: 1200px) {
   :root {
     --mb2: 40px;
@@ -3872,6 +3936,51 @@ x .feaures_info-img.order1 {
   }
   .home_banner-title {
     text-transform: none;
+  }
+
+  /* bottom-banner */
+  .bottom-banner {
+    padding-bottom: 42px;
+  }
+  .bottom-banner__img {
+    margin-bottom: 24px;
+    padding-bottom: 100%;
+    display: block;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    background: url(../images/bottom-banner.webp) center/cover no-repeat;
+  }
+  .bottom-banner__img img {
+    display: none;
+  }
+  .bottom-banner__inner {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    bottom: auto;
+    display: block;
+    align-items: normal;
+    padding: 0 24px;
+  }
+  .bottom-banner-entry {
+    width: auto;
+    left: auto;
+  }
+
+  /* history-banner */
+  .history-banner {
+    display: block;
+  }
+  .history-banner__img {
+    width: auto;
+  }
+  .history-banner__inner {
+    width: auto;
+    display: block;
+    align-items: normal;
+    padding: 40px 20px;
   }
 }
 /* mobile-slider */
